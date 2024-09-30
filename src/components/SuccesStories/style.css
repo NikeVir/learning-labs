@@ -1,0 +1,12 @@
+.slick-slide {
+    transform: perspective(1000px) rotateX(0deg) translateZ(0);
+    transition: transform 0.5s ease-out;
+  }
+  
+  .slick-active {
+    transform: perspective(1000px) rotateX(-15deg) translateZ(150px);
+  }
+  
+  .slick-current {
+    transform: perspective(1000px) rotateX(0deg) translateZ(300px);
+  }
