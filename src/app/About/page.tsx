@@ -43,11 +43,11 @@ function page() {
             </div>
             <div className='flex gap-2 mt-4'>
               <div>
-                <img src='/images/about/main1.png' alt='about' className='w-[564px] max-h-[561px]' />
+                <img src='/images/About/main1.png' alt='about' className='w-[564px] max-h-[561px]' />
               </div>
               <div className='flex flex-col gap-2'>
-                <img src='/images/about/main2.png' alt='about' className='w-[564px] max-h-[274px]' />
-                <img src='/images/about/main3.png' alt='about' className='w-[564px] max-h-[274px]' />
+                <img src='/images/About/main2.png' alt='about' className='w-[564px] max-h-[274px]' />
+                <img src='/images/About/main3.png' alt='about' className='w-[564px] max-h-[274px]' />
               </div>
 
             </div>
