@@ -31,16 +31,16 @@ function page() {
                 <div>
                   <section className='flex  '>
                     <div className='w-[690px]  '>
-
+                    
                       <div className='flex flex-wrap gap-6 '>
-                        <div className='p-[1px] shadow-logobox rounded-md flex justify-center'>
-                          <div className='bg-[linear-gradient(180deg,#FAFAFA_0%,#FFFFFF_100%)] hover:bg-none hover:bg-[#FEBF00] flex justify-center items-center py-[9.33px] px-[11.88px] rounded-md  w-[189px]'>
+                        
+                          <div className='bg-[linear-gradient(180deg,#FAFAFA_0%,#FFFFFF_100%)]  flex justify-center items-center py-[9.33px] px-[11.88px] rounded-md  shadow-logobox w-[189px]'>
                             <img src='/images/logos/maskg (1).svg' alt='partner' />
                           </div>
-                        </div>
-
-                        <div className='bg-[linear-gradient(180deg,#FAFAFA_0%,#FFFFFF_100%)] flex justify-center items-center py-[9.33px] px-[11.88px] rounded-md shadow-logobox w-[189px]'>
+                        <div className='p-[1px] shadow-logobox rounded-md flex justify-center '>
+                        <div className='bg-[#FEBF00] flex justify-center items-center py-[9.33px] px-[11.88px] rounded-md  w-[189px]'>
                           <img src='/images/logos/maskg (2).svg' alt='partner' />
+                        </div>
                         </div>
                         <div className='bg-[linear-gradient(180deg,#FAFAFA_0%,#FFFFFF_100%)] flex justify-center items-center py-[9.33px] px-[11.88px] rounded-md shadow-logobox w-[189px]'>
                           <img src='/images/logos/maskg (3).svg' alt='partner' />

@@ -6,34 +6,31 @@ import Image from 'next/image';
 type IconProps = React.SVGProps<SVGSVGElement>;
 export default function FooterLinks() {
   const navigation = {
-    proxies: [
-      { name: "Residential Proxies", href: "/Proxies/residential" },
-      { name: "Data Center Proxies", href: "/Proxies/datacenter" },
-      { name: "IPv6 Proxies", href: "/Proxies/ipv6" },
-    ],
     company: [
-      { name: "Contact us", href: "/contact-us" },
-      { name: "Ethics", href: "/Ethics" },
-      { name: "FAQ", href: "/FAQ" },
-      { name: "Guides", href: "/Blog?text=guide" },
+      { name: "About", href: "/About" },
+      { name: "Careers", href: "/Proxies/" },
+      { name: "Affiliates", href: "/Proxies/ipv6" },
+      { name: "Press", href: "/Proxies/ipv6" },
+      { name: "Investers", href: "/Proxies/ipv6" },
+      { name: "Legal & Privacy", href: "/Proxies/ipv6" },
+    ],
+    features: [
+      { name: "Wallet", href: "/contact-us" },
+      { name: "Card", href: "/Ethics" },
+      { name: "Dashboard", href: "/FAQ" },
+      { name: "Portfolio", href: "/Blog?text=guide" },
+
+    ],
+    developers: [
+      { name: "Cloud", href: "/Solutions/ad-verification" },
+      { name: "Wallet SDK", href: "/Solutions/social-media" },
+      { name: "API Access", href: "/Solutions/cyber-security" },
+    ],
+    resources: [
       { name: "Blog", href: "/Blog" },
-      { name: "Integrations", href: "/Blog?text=integrations" },
-    ],
-    services: [
-      { name: "E-commerce", href: "/Solutions/ad-verification" },
-      { name: "Social Media Marketing", href: "/Solutions/social-media" },
-      { name: "Cybersecurity", href: "/Solutions/cyber-security" },
-      { name: "Market Research", href: "/Solutions/market-research" },
-      { name: "SEO Monitoring", href: "/Solutions/seo-monitoring" },
-      { name: "Ad Tech", href: "/Solutions/ad-tech" },
-    ],
-    legal: [
-      { name: "terms and conditions", href: "/terms-of-service" },
-      { name: "privacy policy", href: "/privacy-policy" },
-      { name: "refund policy", href: "/refund-policy" },
-      { name: "fair usage policy", href: "/FairUsagePolicy" },
-      { name: "Shipping terms", href: "/delivery-agreement" },
-      { name: "Cookies Policy", href: "/Cookies" },
+      { name: "Help & Support", href: "/Communities" },
+      { name: "Customers Stories", href: "/refund-policy" },
+      { name: "FAQ", href: "/FairUsagePolicy" },
     ],
     social: [
       {
@@ -70,7 +67,7 @@ export default function FooterLinks() {
 
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 ">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className=" text-center lg:text-left">
+          <div className="  flex flex-col items-center justify-center  text-center lg:text-left">
             <div className="flex items-center -gap-10">
             <img src="/images/footer/footerlogo.svg" className="w-[70px] h-[70px]" alt="Logo" />
             <img src="/images/logos/logowhite.svg" className=" relative -left-16" alt="Logo" />
@@ -99,7 +96,7 @@ export default function FooterLinks() {
                   Company
                 </h3>
                 <ul role="list" className="mt-4 space-y-2">
-                  {navigation.proxies.map((item) => (
+                  {navigation.company.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -116,7 +113,7 @@ export default function FooterLinks() {
                   Features
                 </h3>
                 <ul role="list" className="mt-4 space-y-2">
-                  {navigation.company.map((item) => (
+                  {navigation.features.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -135,7 +132,7 @@ export default function FooterLinks() {
                   Developers
                 </h3>
                 <ul role="list" className="mt-4 space-y-2">
-                  {navigation.services.map((item) => (
+                  {navigation.developers.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -152,7 +149,7 @@ export default function FooterLinks() {
                   Resources
                 </h3>
                 <ul role="list" className="mt-4 space-y-2">
-                  {navigation.legal.map((item) => (
+                  {navigation.resources.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}

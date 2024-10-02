@@ -8,7 +8,7 @@ function Advisory() {
         <p className='text-center font-bold text-[42px]'>
         Our Advisory
             </p></div>
-        <div className='flex justify-center gap-6'>
+        <div className='flex max-md:flex-wrap justify-center gap-6'>
             <AdvisoryCards/>
             <AdvisoryCards/>
             <AdvisoryCards/>

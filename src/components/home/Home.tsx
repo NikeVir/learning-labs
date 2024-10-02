@@ -7,15 +7,37 @@ import Features from '../Features/Features'
 import Main from '../Main/Main'
 import ScrollAnimationComponent from '../scroller/Scroller'
 import Overview from '../Overview/Overview'
-
+import { Stickynav } from '../Stickynav/Stickynav'
+import EmblaCarouselHome from '../Carousel/verticalHome/EmblaCarouselHome'
+import { EmblaOptionsType } from 'embla-carousel'
+import '@/components/Carousel/verticalHome/css/emblahome.css'
+const OPTIONS: EmblaOptionsType = { axis: 'y' }
+const SLIDE_COUNT = 3
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 function Home() {
   return (
     <div>
       <Header/>
       <Main/>
-      <Overview/>
+      <Stickynav/>
+      <div id="table-of-contents" className='py-20'>
+      <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
+      </div>
+      <div id="screencasts" className='py-20'>
+      <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
+      </div>
+      <div id="resources" className='py-20'>
+      <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
+      </div>
+      <div id="pricing" className='py-20'>
+      <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
+      </div>
       {/* <ScrollAnimationComponent/> */}
-      <Features/>
+    <div id="feature">
+
+      <Features  />
+    </div>
+
       <Advisory/>
       <Research/>
       <Footer/>

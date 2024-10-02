@@ -1,6 +1,12 @@
 import React from 'react'
 import Vertical3DSlider from './UpsideCrousel';
+import EmblaCarousel from '../Carousel/verticalHome/EmblaCarousel';
 
+import { EmblaOptionsType } from 'embla-carousel'
+import '@/components/Carousel/verticalHome/css/embla.css'
+const OPTIONS: EmblaOptionsType = { axis: 'y' }
+const SLIDE_COUNT = 3
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 function SuccessStories() {
     const sliderItems = [
         { src: '/image1.jpg', alt: 'Image 1', title: 'Slide 1', description: 'Description for slide 1' },
@@ -9,9 +15,9 @@ function SuccessStories() {
     ];
     return (
         <div className='flex justify-center items-center min-h-screen'>
-            <div className='w-[80%] flex items-center justify-center'>
+            <div className='w-[95%] lg:w-[80%]  flex items-center justify-center'>
 
-            <div className='basis-1/2'>
+            <div className='basis-1/2 h-[276px]'>
                 <div className='text-[#525252] font-bold text-[2.6rem] leading-[50px]'>
                     Success Stories and Experiences
                 </div>
@@ -23,8 +29,8 @@ function SuccessStories() {
                     <div className='font-bold relative -left-[100px] top-[50px]'>Happy Customers</div>
                 </div>
             </div>
-            <div className='basis-1/2'>
-                {/* <Vertical3DSlider items={sliderItems} /> */}
+            <div className='basis-1/2 max-md:hidden flex justify-center overflow-y-hidden items-center  h-[895px]'>
+                <EmblaCarousel slides={SLIDES} options={OPTIONS}/>
             </div>
             </div>
 
@@ -33,3 +39,4 @@ function SuccessStories() {
 }
 
 export default SuccessStories
+
