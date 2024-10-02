@@ -35,7 +35,7 @@ function Main() {
                     </div>
                 </div>
                 </div>
-                <div className='flex max-lg:flex-wrap items-center justify-center  md:gap-8 '>
+                <div className='flex max-lg:flex-wrap items-center justify-center gap-2 md:gap-8 '>
                     {
                         logos.map((logo, index) => (
                             <div className='bg-[#FAFAFA33] max-w-[120px] md:min-w-[188px] min-h-[40px] md:min-h-[66px] flex justify-center items-center w-[188px] border border-[#ffffff]  rounded-[50px]'>

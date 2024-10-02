@@ -5,14 +5,14 @@ import { cn } from "@/lib/utils";
 
 
 const buttonVariants = cva(
-  "rounded-[10px] px-[30px] py-[14px] text-white font-bold text-sm md:text-[20px] text-xl w-fit hover:opacity-95 ",
+  "rounded-[10px] px-[30px] py-[14px] text-white font-bold text-sm   text-xl w-fit hover:opacity-95 ",
   {
     variants: {
       variant: {
         primary:
-          "bg-[#4AB371] ",
+          "bg-[#4AB371] md:text-[20px]",
         outline:
-          "font-medium border border-[#C5CFDA] ",
+          "font-medium border border-[#C5CFDA] md:text-[20px]",
         blueOutline: "p-[2px] bg-[#ffffff] shadow-outline",
         greenOutline: "p-[2px] bg-[#ffffff] shadow-outline",
         purpleOutline: "p-[2px] bg-[#ffffff] shadow-outline",

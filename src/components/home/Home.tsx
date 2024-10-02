@@ -20,16 +20,16 @@ function Home() {
       <Header/>
       <Main/>
       <Stickynav/>
-      <div id="table-of-contents" className='py-20'>
+      <div id="table-of-contents" className='py-10 lg:py-20 '>
       <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
       </div>
-      <div id="screencasts" className='py-20'>
+      <div id="screencasts" className=' py-10 lg:py-20'>
       <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
       </div>
-      <div id="resources" className='py-20'>
+      <div id="resources" className='py-10 lg:py-20'>
       <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
       </div>
-      <div id="pricing" className='py-20'>
+      <div id="pricing" className='py-10 lg:py-20'>
       <EmblaCarouselHome slides={SLIDES} options={OPTIONS} />
       </div>
       {/* <ScrollAnimationComponent/> */}

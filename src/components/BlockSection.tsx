@@ -58,7 +58,7 @@ export default function Blog({ filter }: { filter: string | null }) {
       placeholder="Search Blogs"
       value={searchInput}
       onChange={(e) => setSearchInput(e.target.value)}
-      className=" border-[#05C067] p-3 border-2 rounded-full text-[#05C067]   w-[735px]"
+      className=" border-[#05C067] p-3 border-2 rounded-full text-[#05C067]   w-full 2xl:w-[735px]"
     />
   );
 
@@ -119,7 +119,7 @@ export default function Blog({ filter }: { filter: string | null }) {
 
   return (
     <section className=" overflow-hidden flex justify-center bg-[#f1fff6] mb-10">
-      <div className="w-[80%] overflow-hidden flex justify-center">
+      <div className="lg:w-[80%] w-[95%] overflow-hidden flex max-md:flex-col justify-center">
 
       
       <div className=" flex flex-col gap-16">
@@ -129,7 +129,7 @@ export default function Blog({ filter }: { filter: string | null }) {
 
         <div className=" flex flex-col gap-4 ">
           <h4 className="font-bold text-base">Industry</h4>
-          <div className="flex flex-wrap gap-3 w-[330px]">
+          <div className="flex flex-wrap gap-3 max-md:w-full w-[330px]">
             <span className=" min-w-[92px] py-[10px] px-[32px] text-[12px]  rounded-[30px] shadow-featurebox">Pharmaceutical</span>
             <span className=" min-w-[92px] py-[10px] px-[32px] text-[12px]  rounded-[30px] shadow-featurebox">Healthcare</span>
             <span className=" min-w-[92px] py-[10px] px-[32px] text-[12px]  rounded-[30px] shadow-featurebox">Hospitality</span>
@@ -141,7 +141,7 @@ export default function Blog({ filter }: { filter: string | null }) {
         <div>
           
           <h4 className="font-bold text-base">Scope of responsibilty</h4>
-          <div className="flex flex-wrap gap-3 w-[330px]">
+          <div className="flex flex-wrap gap-3 max-md:w-full  w-[330px]">
             <span className=" min-w-[92px] py-[10px] px-[32px] text-[12px]  rounded-[30px] shadow-featurebox">Sales</span>
             <span className=" min-w-[92px] py-[10px] px-[32px] text-[12px]  rounded-[30px] shadow-featurebox">Marketing</span>
             <span className=" min-w-[92px] py-[10px] px-[32px] text-[12px]  rounded-[30px] shadow-featurebox">Communications</span>
@@ -151,7 +151,7 @@ export default function Blog({ filter }: { filter: string | null }) {
         <div>
           
           <h4 className="font-bold text-base">Grade</h4>
-          <div className="flex flex-wrap gap-3 w-[330px]">
+          <div className="flex flex-wrap gap-3 max-md:w-full  w-[330px]">
             <span className=" min-w-[92px] py-[10px] px-[32px] text-[12px]  rounded-[30px] text-center shadow-featurebox">A</span>
             <span className=" min-w-[92px] py-[10px] px-[32px] text-[12px]  rounded-[30px]  text-center shadow-featurebox">B</span>
           
@@ -160,7 +160,7 @@ export default function Blog({ filter }: { filter: string | null }) {
         <div className=" bg-[#E0E0E0] h-[1px]"></div>
       </div>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 max-md:hidden">
       <div className="mt-2 flex  font-bold text-base">Recent</div>
       <div className=" flex gap-4 w-[310px]">
         <img src="/images/blog/recent.png" alt="blog" className=" rounded-lg" />
@@ -209,7 +209,7 @@ export default function Blog({ filter }: { filter: string | null }) {
             {displayCards}
           </div>
         ) : noBlogsMessage}
-        {paginationControls}
+        {/* {paginationControls} */}
       </div>
       </div>
     </section>

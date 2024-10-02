@@ -27,7 +27,7 @@ function LastCard({ data }: { data: DataLeftProps }) {
                 <div className='w-64'>
                   <h3 className='text-sm font-medium'>Sign in for your Invoices!</h3>
                   <p className='text-[10px] text-[#6F6F6F]'>Experience unparalleled security.</p>
-                  <Button variant={'white'} className='border-[#FF3D62] text-[9px] text-[#FF3D62] border rounded-full px-4 py-1'> Subscribe Now</Button>
+                  <Button variant={'white'} className='border-[#FF3D62] md:text-[9px] text-[#FF3D62] border rounded-full px-4 py-1'> Subscribe Now</Button>
                 </div>
               </div>
 
@@ -36,7 +36,7 @@ function LastCard({ data }: { data: DataLeftProps }) {
                 <div className='w-64'>
                   <h3 className='text-sm font-medium'>Sign in for your Invoices!</h3>
                   <p className='text-[10px] text-[#6F6F6F]'>Experience unparalleled security.</p>
-                  <Button variant={'white'} className='border-[#FF3D62] text-[9px] text-[#FF3D62] border rounded-full px-4 py-1'> Subscribe Now</Button>
+                  <Button variant={'white'} className='border-[#FF3D62] md:text-[9px] text-[#FF3D62] border rounded-full px-4 py-1'> Subscribe Now</Button>
                 </div>
               </div>
             </div>

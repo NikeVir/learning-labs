@@ -10,6 +10,7 @@ import {
 import ClassNames from 'embla-carousel-class-names'
 import useEmblaCarousel from 'embla-carousel-react'
 import LeftCard from '@/components/Tools&Features/LeftCard'
+import HomeCard from '@/components/Tools&Features/HomeCard'
 
 type PropType = {
   slides: number[]
@@ -45,7 +46,7 @@ const EmblaCarouselHome: React.FC<PropType> = (props) => {
         
           {slides.map((slide, index) => (
             <div className="embla__slide embla__class-names " key={index}>
-                <LeftCard data={DataLeft}/>
+                <HomeCard data={DataLeft}/>
             </div>
           ))}
         </div>
@@ -57,7 +58,7 @@ const EmblaCarouselHome: React.FC<PropType> = (props) => {
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div> */}
 
-        <div className="embla__dots  absolute top-[40%] gap-4 flex flex-col   z-10 right-40">
+        <div className="embla__dots  absolute lg:top-[40%] top-[20%] gap-4 flex flex-col   z-10  md:right-10 lg:right-40">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}

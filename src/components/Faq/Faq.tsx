@@ -59,9 +59,9 @@ export default function FAQs({ colortheme }: { colortheme: string }) {
 
                     <div className=" flex flex-col justify-between ">
                         {faqs.map((faq, index) => (
-                            <div key={index} onClick={() => handleToggle(index)} className="cursor-pointer mx-4 flex w-[963px] flex-col ">
+                            <div key={index} onClick={() => handleToggle(index)} className="cursor-pointer mx-4 flex lg:w-[963px] md:w-[600px] sm:w-[500px] w-[380px]   flex-col ">
                                 {/* FAQ BLOCK */}
-                                <div className={`relative flex my-2 w-[963px] 
+                                <div className={`relative flex my-2 xl:w-[963px] 
                 hover:border-[#FEBF00]
                  rounded-[10px] border px-12 py-8 ${openFaqs.includes(index) ? 'border-[1px] border-[#FEBF00] shadow-faqbox' : 'border-[#E0E0E0]'}`}>
                                     <div>

@@ -161,10 +161,10 @@ export function Stickynav() {
       <div className="hidden sm:flex  sm:h-32 sm:justify-center  ">
         <div
           role="list"
-          className="mb-[-2px] flex gap-4 bg-white text-base font-medium text-slate-900 [counter-reset:section]"
+          className="mb-[-2px]  flex gap-4 bg-white text-base font-medium text-slate-900 [counter-reset:section]"
         >
           {sections.slice(0,-1).map((section, sectionIndex) => (
-            <div key={section.id} className="flex relative  w-[276px] h-[124px]  ">
+            <div key={section.id} className="flex relative  lg:w-[276px] lg:h-[128px]  ">
               <a
                 href={`#${section.id}`}
                 className={clsx(
@@ -174,7 +174,7 @@ export function Stickynav() {
                     : 'border-transparent before:text-slate-500 hover:bg-blue-50/40 hover:before:text-slate-900',
                 )}
               > 
-              <div className='flex flex-col gap-2 text-center w-[160px] text-black font-bold'>
+              <div className='flex flex-col gap-2 text-center lg:w-[160px] text-black font-bold'>
                 <div className='flex justify-center'>
                 {section.icon}
 

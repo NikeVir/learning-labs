@@ -12,7 +12,7 @@ function Partners() {
                 <div className='text-[#E0E0E0] text-base'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
                 </div>
             </div>
-            <div className='flex justify-center max-md:flex-wrap mt-[50px] gap-5'>
+            <div className='flex justify-center max-lg:flex-wrap mt-[50px] gap-5'>
                 <PartnerCard />
                 <PartnerCard />
                 <PartnerCard />

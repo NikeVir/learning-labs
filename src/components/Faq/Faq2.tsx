@@ -40,11 +40,11 @@ export default function FAQ2s({ colortheme }: { colortheme: string }) {
     return (
         <section>
             {/* Container */}
-            <div className="mx-auto w-full flex flex-col gap-12 max-w-7xl px-5 my-10">
+            <div className="mx-auto  w-full flex flex-col gap-12 max-w-7xl px-5 my-10">
 
 
                 {/* Component */}
-                <div className="mx-auto flex  max-w-xl flex-col gap-4    lg:max-w-3xl ">
+                <div className="mx-auto flex max-lg:text-center   max-w-xl flex-col gap-4    lg:max-w-3xl ">
                     <h2 className="  text-[#0E0637] font-medium text-[42px] lg:text-[32px]">
                         Frequently Asked Questions
                     </h2>

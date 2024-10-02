@@ -54,17 +54,15 @@ export default function Objectives() {
   };
 
   return (
-    <div className=" ">
       <div className=" mx-auto">
-        <div className="">
         
           <div className="mt-10 lg:col-span-7 lg:mt-0">
-            <dl className="space-y-6">
+            <dl className="space-y-6 w-full">
               {faqs.map((faq, index) => (
                 <Disclosure
                   as="div"
                   key={faq.question}
-                  className={`w-[564px] p-6 mx-auto  border rounded-lg ${openIndex === index ? "border-white" :"border-gray-200 border-opacity-40"}  shadow-md`}
+                  className={`xl:w-[564px] md:w-[400px] sm:w-[500px] w-[380px]  p-6 mx-auto  border rounded-lg ${openIndex === index ? "border-white" :"border-gray-200 border-opacity-40"}  shadow-md`}
                 >
                   {({ open }) => (
                     <>
@@ -107,9 +105,7 @@ export default function Objectives() {
               ))}
             </dl>
           </div>
-        </div>
       </div>
-    </div>
   );
 }
 
