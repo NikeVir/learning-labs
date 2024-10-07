@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../ui/Button';
+import lastcardImg from '../../../public/images/toolcards/lastcard.jpg'
 
 interface ContentItem {
   title: string;
@@ -17,8 +18,8 @@ function LastCard({ data }: { data: DataLeftProps }) {
   return (
     <div className='flex xl:h-[70vh] justify-center items-center  snap-center'>
       <div className='w-[90%] xl:w-[70%] max-md:flex-col  flex gap-8 items-center'>
-        <div className='relative  basis-1/2 min-h-[504px] '>
-          <div className='relative  min-h-[504px] max-w-[464px] flex'>
+        <div className='relative  max-lg:hidden basis-1/2 min-h-[504px] '>
+          <div className='relative  min-h-[504px] max-lg:hidden  max-w-[464px] flex'>
 
             <img src="/images/toolcards/cardimg.png" className='w-[464px]  md:absolute' alt='' />
             <div className='flex flex-col gap-2 w-[264px] absolute bottom-8 right-8'>
@@ -44,9 +45,9 @@ function LastCard({ data }: { data: DataLeftProps }) {
           </div>
 
         </div>
-        <div className='flex flex-col basis-1/2 gap-2'>
+        <div className='flex flex-col lg:basis-1/2 w-full gap-2'>
           <h1 className='text-xl font-bold text-[#004B96]'>{data.title}</h1>
-          <div className='text-[42px] font-medium leading-[50px]'>{data.description}</div>
+          <div className='text-3xl sm:text-[42px] font-medium sm:leading-[50px]'>{data.description}</div>
           <ul className='text-[#393939] text-xl font-medium'>
             {
               data.content.map((item, index) => (
@@ -57,11 +58,11 @@ function LastCard({ data }: { data: DataLeftProps }) {
 
 
           </ul>
-          <div className='flex gap-10 mt-8'>
-            <Button variant={'primary'}> Join Community</Button>
-            <div className=' flex justify-center items-center'>
+          <div className='flex gap-5  sm:gap-10 max-sm:justify-center mt-8'>
+            <Button variant={'primary'} className='max-sm:text-sm  max-sm:py-3'> Join Community</Button>
+            <div className=' flex border justify-center items-center'>
 
-              <a className=' font-bold text-xl text-[#4AB371] border-b-2 border-[#4AB371]'>Read More</a>
+              <a className=' font-bold text-xl text-[#4AB371] border-b-2 max-sm:text-sm  max-sm:py-3 border-[#4AB371]'>Read More</a>
             </div>
           </div>
         </div>

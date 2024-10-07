@@ -10,9 +10,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-[#4AB371] md:text-[20px]",
+          "bg-[#4AB371] md:text-[20px]   sm:px-[30px] sm:py-[14px] px-[10px] py-[5px]",
         outline:
-          "font-medium border border-[#C5CFDA] md:text-[20px]",
+          "font-medium border border-[#C5CFDA] md:text-[20px]   sm:px-[30px] sm:py-[14px] px-[12px] py-[10px]",
         blueOutline: "p-[2px] bg-[#ffffff] shadow-outline",
         greenOutline: "p-[2px] bg-[#ffffff] shadow-outline",
         purpleOutline: "p-[2px] bg-[#ffffff] shadow-outline",

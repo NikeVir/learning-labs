@@ -14,17 +14,17 @@ function page() {
       <div className='flex justify-center '>
 
         <div className='2xl:w-[80%] xl:w-[90%] w-[95%] flex  max-lg:flex-col gap-8'>
-          <div className='xl:basis-2/3   pr-5 flex flex-col items-center justify-center gap-[66px]'>
-            <div className='flex relative z-10  items-center'>
+          <div className='xl:basis-2/3   xl:pr-5 flex flex-col items-center justify-center gap-[66px]'>
+            <div className='flex relative z-10   items-center'>
               <img src='/images/communities/background.svg' className='absolute left-[5%] top-[20%]' alt='community' />
               <div className=' relative flex flex-col gap-16'>
-                <div className=' lg:text-left  text-center flex justify-center items-center'>
+                <div className=' lg:text-left max-sm:my-10  text-center flex justify-center items-center'>
                   <div >
-                    <div className='text-[#0E0637] font-bold leading-[64px] text-[3.4rem] flex flex-col gap-3'>
+                    <div className='text-[#0E0637] font-bold text-3xl sm:leading-[64px] sm:text-[3.4rem] flex flex-col gap-3'>
                       <p>Simplify Your</p>
                       <p className='font-bold -mt-3 bg-[linear-gradient(128.53deg,#22C55E_-15.65%,#18763C_57.69%)] bg-clip-text text-transparent'>  Learning Experience</p>
                     </div>
-                    <p className='text-[#393939] mt-2 max-w-[661px] text-xl font-medium '>Managing a hackathon can be a challenge without the right tools. We simplified this process to create a better platform experience for your organization. </p>
+                    <p className='text-[#393939] mt-2 max-w-[661px] text-base sm:text-xl font-medium '>Managing a hackathon can be a challenge without the right tools. We simplified this process to create a better platform experience for your organization. </p>
                   </div>
                 </div>
 
@@ -68,10 +68,10 @@ function page() {
               </div>
 
             </div>
-            <div>
+            <div className=' items-center justify-center '>
 
               <div className='max-lg:text-center'>
-                <div className='text-[2.6rem] leading-[50px] font-bold '>
+                <div className='text-3xl sm:text-[2.6rem] sm:leading-[50px] font-bold '>
                   who will benefit by doing the OLL community
                 </div>
                 <div className='text-[#393939] mt-2 font-medium text-lg '>
@@ -79,7 +79,7 @@ function page() {
                 </div>
               </div>
 
-              <div className='flex flex-wrap justify-center mt-4 gap-[18px] '>
+              <div className='flex flex-wrap items-center justify-center mt-4 gap-[18px] '>
                 <div className='flex flex-col gap-4'>
                   <div className='w-[184px] h-[184px] rounded-[100%] flex justify-center items-center shadow-featurebox bg-white'>
                     <img src='/images/communities/Ellipse 4517.png' alt='feature' />
@@ -141,9 +141,9 @@ function page() {
               <FAQ2s colortheme='blue' />
 
           </div>
-          <div className=' max-lg:basis-1/3 lg:w-[442px] border max-h-[882px]  rounded-xl flex flex-col  gap-4 p-11 bg-white shadow-logobox'>
+          <div className=' max-lg:basis-1/3 lg:w-[442px] border xl:max-h-[882px]  rounded-xl flex flex-col  gap-4 p-11 bg-white shadow-logobox'>
             <div>
-              <div className='text-[2.6rem] leading-[50px] font-medium text-center'>
+              <div className='text-3xl sm:text-[2.6rem] sm:leading-[50px] font-medium text-center'>
                 Join Community
               </div>
               <div className='text-[#393939] mt-2 font-medium text-lg text-center'>
@@ -165,9 +165,9 @@ function page() {
                 Joint client projects & interventions</div>
             </div>
             <div className='flex flex-col mt-6 justify-center items-center gap-4 mx-4 '>
-              <Button variant={'primary'} className='w-full max-w-[344px]'>Join Community</Button>
-              <Button variant={'white'} className='w-full max-w-[344px] flex items-center justify-center gap-4'> <img src="images/communities/google.svg" alt='' /> Join Via Google</Button>
-              <Button variant={'primary'} className='w-full max-w-[344px] flex items-center justify-center bg-[linear-gradient(135deg,#2489BE_14.64%,#0575B3_85.36%)] gap-4'> <img src="images/communities/linkedin.svg" alt='' /> Join Via Linked In</Button>
+              <Button variant={'primary'} className='w-full max-w-[344px] max-sm:text-base max-sm:py-4'>Join Community</Button>
+              <Button variant={'white'} className='w-full max-w-[344px] flex items-center justify-center gap-4 max-sm:text-base max-sm:py-4'> <img src="images/communities/google.svg" alt='' /> Join Via Google</Button>
+              <Button variant={'primary'} className='w-full max-w-[344px] flex items-center justify-center bg-[linear-gradient(135deg,#2489BE_14.64%,#0575B3_85.36%)] gap-4 max-sm:text-base max-sm:py-4'> <img src="images/communities/linkedin.svg" alt='' /> Join Via Linked In</Button>
             </div>
 
           </div>

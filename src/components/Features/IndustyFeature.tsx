@@ -28,7 +28,7 @@ const FeatureDate =[
 function IndustryFeature() {
   return (
     <div className='bg-[#001631] py-10 flex justify-center'>
-    <div className='w-[75%] flex flex-col gap-16   '>
+    <div className='lg:w-[75%] w-[95%] flex flex-col gap-16   '>
         <div className='flex justify-center'>
             <div className='bg-[rgba(255,255,255,0.12)] max-lg:flex-wrap max-lg:w-auto  w-[948px] rounded-[888px] flex justify-center px-4 py-2 max-lg:gap-x-[20px]  max-lg:gap-y-[10px] gap-[42px]'>
 
@@ -56,9 +56,9 @@ function IndustryFeature() {
                 {
 
                     FeatureDate.map((item,index) => (
-                        <div key={index} className='flex gap-7  '>
-                            <img src={item.img} className='w-[150px] max-md:h-[90px] md:w-[257px]' alt="" />
-                            <div className='text-white md:w-[306px] flex flex-col gap-2'>
+                        <div key={index} className='flex max-sm:flex-col items-center gap-7  '>
+                            <img src={item.img} className='sm:w-[150px] max-md:h-[90px] md:w-[257px]' alt="" />
+                            <div className='text-white md:w-[306px] max-sm:text-center flex flex-col gap-2'>
                                 <h2 className='md:text-xl md:w-[317px] font-bold'>{item.title}</h2>
                                 <p className='md:text-[16px] font-normal md:w-[276px] '>{item.content}</p>
                             </div>

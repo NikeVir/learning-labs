@@ -15,7 +15,7 @@ function page() {
 
       
       <div className='flex gap-9 items-center justify-center py-10'>
-        <div className='flex bg-white gap-10 items-center justify-between shadow-featurebox py-2 px-3 rounded-lg min-w-[400px] max-md:w-fit'>
+        <div className='flex bg-white gap-10 items-center justify-between fixed shadow-featurebox py-2 px-3 rounded-lg min-w-[380px] max-md:w-fit'>
               <div>
                 <img src='/images/logo.svg' alt='about' className='w-[85px] h-[50px]' />
               </div>

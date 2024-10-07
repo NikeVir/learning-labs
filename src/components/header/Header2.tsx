@@ -14,6 +14,7 @@ import {
 } from "@headlessui/react";
 import Image from 'next/image'
 import { ChevronDownIcon,XMarkIcon } from '@heroicons/react/20/solid'
+import { Button } from '../ui/Button';
 
 const products = [
     {
@@ -86,17 +87,31 @@ function classNames(...classes: any) {
     return classes.filter(Boolean).join(" ");
 }
 
-const Header: React.FC = () => {
+const Header2: React.FC = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <div className="min-h-[128px] flex justify-between items-center px-4 lg:px-[140px]">
-            <div className="logo" >
-                <a href='/'><img src="/images/logo.svg" alt="Logo" className='sm:w-[15rem] w-[12rem]' /></a>
+       
+        <div className='flex gap-9 items-center justify-center py-10'>
+        <div className='flex bg-white gap-10 items-center justify-between shadow-featurebox py-2 px-3 rounded-lg min-w-[100%] sm:min-w-[400px] max-md:w-fit'>
+            <div>
+                <img src='/images/logo.svg' alt='about' className='w-[85px] h-[50px]' />
             </div>
-            <div className="hamburger-menu cursor-pointer " onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-                <img src="/images/hamburger.svg"  alt="Logo" />
+            <ul className='flex max-md:hidden gap-8 text-sm font-normal'>
+                <li><a href='/'>Home</a></li>
+                <li><a href='/'>Benefit</a></li>
+                <li><a href='/Communities'>Community</a></li>
+                <li><a href='/About'>About</a></li>
+            </ul>
+            <div className='max-md:hidden'>
+                <Button variant={'primary'} className='text-[12px] px-4 py-[10px] md:text-[12px]'>Join Community</Button>
             </div>
+            <a className='md:hidden'  onClick={() => setMobileMenuOpen(!mobileMenuOpen)} ><img src="/images/hamburger.svg" alt="Logo" /></a>
+
+        </div>
+
+    
+          
 
             <Dialog
                 className="z-50"
@@ -265,4 +280,4 @@ const Header: React.FC = () => {
     );
 };
 
-export default Header;
+export default Header2;

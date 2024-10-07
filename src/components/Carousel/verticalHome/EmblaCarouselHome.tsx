@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import {
@@ -10,55 +10,68 @@ import {
 import ClassNames from 'embla-carousel-class-names'
 import useEmblaCarousel from 'embla-carousel-react'
 import LeftCard from '@/components/Tools&Features/LeftCard'
-import HomeCard from '@/components/Tools&Features/HomeCard'
+import HomeLeftCard from '@/components/Tools&Features/HomeLeftCard'
 
 type PropType = {
-  slides: number[]
+  slides: DataLeftProps[]
   options?: EmblaOptionsType
 }
+interface ContentItem {
+  title: string;
+  description: string;
+}
 interface DataLeftProps {
-    title: string;
-    description: string;
-    content: string;
-  }
-  const DataLeft:DataLeftProps = {
-    title: "Tools & Features",
-    description: "Assess and Elevate Your Organizational Maturity",
-    content: "Transform your organization’s learning and development journey with our comprehensive Maturity Assessment Tools. These tools are designed to help you understand, benchmark, and improve across various levels of organizational maturity."
-  }
+  img:string,
+  title: string;
+  description: string;
+  content: ContentItem[];
+  singleContent: string;
+}
+
+
+
+const OPTIONS: EmblaOptionsType = { axis: 'x' }
 const EmblaCarouselHome: React.FC<PropType> = (props) => {
-  const { slides, options } = props
+  const { slides } = props
+  const [options, setOptions] = React.useState<EmblaOptionsType>({ axis: 'y' })
+
+  useEffect(() => {
+    function handleResize() {
+      const newAxis = window.innerWidth < 1040 ? 'x' : 'y';
+      setOptions(prevOptions => ({ ...prevOptions, axis: newAxis }));
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call once to set initial value
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [ClassNames()])
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi)
 
-  const {
-    prevBtnDisabled,
-    nextBtnDisabled,
-    onPrevButtonClick,
-    onNextButtonClick
-  } = usePrevNextButtons(emblaApi)
   return (
-    <section className="embla relative  flex justify-center items-center">
+    <section className="embla relative z-30 py-20 bg-white flex justify-center items-center">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container ">
-        
+
           {slides.map((slide, index) => (
             <div className="embla__slide embla__class-names " key={index}>
-                <HomeCard data={DataLeft}/>
+              <HomeLeftCard data={slide} />
             </div>
           ))}
         </div>
       </div>
 
       <div className="embla__controls">
-        {/* <div className="embla__buttons">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div> */}
 
-        <div className="embla__dots  absolute lg:top-[40%] top-[20%] gap-4 flex flex-col   z-10  md:right-10 lg:right-40">
+
+        <div className="embla__dots  absolute lg:top-[40%] sm:top-[20%] top-[30%] gap-4 flex flex-col   z-10  md:right-10 lg:right-40">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}

@@ -62,7 +62,7 @@ export default function Objectives() {
                 <Disclosure
                   as="div"
                   key={faq.question}
-                  className={`xl:w-[564px] md:w-[400px] sm:w-[500px] w-[380px]  p-6 mx-auto  border rounded-lg ${openIndex === index ? "border-white" :"border-gray-200 border-opacity-40"}  shadow-md`}
+                  className={`xl:w-[564px] md:w-[400px] sm:w-[500px] w-[340px]  p-6 mx-auto  border rounded-lg ${openIndex === index ? "border-white" :"border-gray-200 border-opacity-40"}  shadow-md`}
                 >
                   {({ open }) => (
                     <>

@@ -94,7 +94,7 @@ export function Stickynav() {
   }, []);
 
   return (
-    <div ref={navBarRef} className={`${activeIndex==sections.length-1?"":"sticky"}  top-0 z-50`}>
+    <div ref={navBarRef} className={`${activeIndex==sections.length-1?"":"sticky"}  top-0 z-40`}>
       <Popover className="sm:hidden">
         {({ open }) => (
           <>
@@ -175,10 +175,6 @@ export function Stickynav() {
                 )}
               > 
               <div className='flex flex-col gap-2 text-center lg:w-[160px] text-black font-bold'>
-                <div className='flex justify-center'>
-                {section.icon}
-
-                </div>
                 {section.title}
               </div>
               </a>

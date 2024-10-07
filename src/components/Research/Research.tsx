@@ -8,7 +8,7 @@ function Research() {
 
     <div className=' lg:w-[70%] items-center box-content flex flex-col gap-16 '>
         <div >
-            <p className='text-center text-white  font-bold text-[42px]'>
+            <p className='text-center text-white  font-bold sm:text-[42px] text-[38px]'>
                 Join Our Research
             </p>
         </div>
