@@ -161,10 +161,10 @@ export function Stickynav() {
       <div className="hidden sm:flex  sm:h-32 sm:justify-center  ">
         <div
           role="list"
-          className="mb-[-2px]  flex gap-4 bg-white text-base font-medium text-slate-900 [counter-reset:section]"
+          className="mb-[-2px]  flex gap-4  w-full justify-center border-black bg-white text-base font-medium text-slate-900 [counter-reset:section]"
         >
           {sections.slice(0,-1).map((section, sectionIndex) => (
-            <div key={section.id} className="flex relative  lg:w-[276px] lg:h-[128px]  ">
+            <div key={section.id} className="flex relative lg:w-[236px]  xl:w-[276px] lg:h-[128px]  ">
               <a
                 href={`#${section.id}`}
                 className={clsx(

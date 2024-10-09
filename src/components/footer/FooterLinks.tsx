@@ -41,7 +41,7 @@ export default function FooterLinks() {
       {
         name: "Telegram",
         href: "#",
-        icon: (props: IconProps) => <Image src="/images/logos/facebook.svg" alt="Telegram"  height={400} width={400}/>,
+        icon: (props: IconProps) => <Image src="/images/logos/facebook.svg" alt="Telegram" height={400} width={400} />,
       },
       {
         name: "Discord",
@@ -58,24 +58,22 @@ export default function FooterLinks() {
         href: "#",
         icon: (props: IconProps) => <Image src="/images/logos/discord.svg" alt="Discord" height={400} width={400} />,
       },
-      
+
     ],
   };
 
   return (
     <footer aria-labelledby="footer-heading" className="">
 
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 ">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+      <div className="mx-auto   max-w-7xl px-6 pb-8 md:pt-8 xl:pt-16 sm:pt-24 lg:px-8 ">
+        <div className="lg:grid sm:grid-cols-3 lg:gap-8">
           <div className="  flex flex-col items-center justify-center  text-center lg:text-left">
             <div className="flex items-center -gap-10">
-            <img src="/images/footer/footerlogo.svg" className="w-[70px] h-[70px]" alt="Logo" />
-            <img src="/images/logos/logowhite.svg" className=" relative -left-16" alt="Logo" />
-              
+              <img src="/images/footer/footerlogo.svg" className="w-[70px] h-[70px]" alt="Logo" />
+              <img src="/images/logos/logowhite.svg" className=" relative -left-16" alt="Logo" />
+
             </div>
-            <div className="mt-5 flex flex-col gap-4">
-           
-            </div>
+
             <div className="flex justify-center items-center  space-x-1 lg:justify-start">
               {navigation.social.map((item) => (
                 <a
@@ -89,7 +87,7 @@ export default function FooterLinks() {
               ))}
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          <div className="mt-16  grid grid-cols-2 lg:gap-8 lg:col-span-2 lg:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-[16px] font-bold leading-6  text-[#FEBF00]">

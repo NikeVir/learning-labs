@@ -1,6 +1,6 @@
 const FloatingFooter = () => {
     return (
-        <div className="fixed bottom-5 w-full sm:h-[120px] lg:h-[158px] z-20 flex items-center justify-center">
+        <div className="relative bottom-10 w-full sm:h-[120px] lg:h-[158px] z-20 flex items-center justify-center">
             <div className="relative w-[90%] xl:w-[1152px] h-full flex items-center justify-center pb-4 overflow-hidden">
                 
                

@@ -14,6 +14,7 @@ import {
 } from "@headlessui/react";
 import Image from 'next/image'
 import { ChevronDownIcon,XMarkIcon } from '@heroicons/react/20/solid'
+import { Button } from '../ui/Button';
 
 const products = [
     {
@@ -94,8 +95,13 @@ const Header: React.FC = () => {
             <div className="logo" >
                 <a href='/'><img src="/images/logo.svg" alt="Logo" className='sm:w-[15rem] w-[12rem]' /></a>
             </div>
+            <div className='flex gap-10 items-center justify-center'>
+            <div>
+                <Button variant={'primary'} className='bg-[#fe393c] text-[#000000] py-2 px-2'>Login</Button>
+            </div>
             <div className="hamburger-menu cursor-pointer " onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
                 <img src="/images/hamburger.svg"  alt="Logo" />
+            </div>
             </div>
 
             <Dialog

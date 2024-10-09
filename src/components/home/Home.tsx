@@ -147,7 +147,7 @@ function Home() {
       <Research />
       <Footer />
       
-      <div className='relative lg:pb-[8rem] md:pb-[5rem] pb-[6rem] '>
+      <div className='relative   '>
      <FloatingFooter />
       </div>
     </div>
