@@ -122,34 +122,22 @@ function Home() {
       <Main />
       <div id="sticked" className='z-50 bg-white'>
 
-      <Stickynav />
 
       <div id="table-of-contents" className=' bg-white z-50  '>
-        <EmblaCarouselHome slides={slidesx}  />
+        <Overview />
       </div>
-      <div id="screencasts" className=' bg-white z-50 '>
-        <EmblaCarouselHome slides={slides2}  />
-      </div>
-      <div id="resources" className='bg-white z-50  '>
-        <EmblaCarouselHome slides={slidesx}  />
-      </div>
-      <div id="pricing" className='bg-white z-50 '>
-        <EmblaCarouselHome slides={slidesx}  />
-      </div>
-      {/* <ScrollAnimationComponent/> */}
-      <div id="feature">
+
 
         <Features />
-      </div>
       </div>
 
       <Advisory />
       <Research />
       <Footer />
       
-      <div className='relative   '>
+      {/* <div className='relative   '>
      <FloatingFooter />
-      </div>
+      </div> */}
     </div>
   )
 }

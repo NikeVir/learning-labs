@@ -170,18 +170,18 @@ export function Stickynav() {
                 className={clsx(
                   'flex w-full flex-col items-center justify-center border-b-2 before:mb-2 before:font-mono',
                   sectionIndex === activeIndex
-                    ? 'border-blue-600 bg-[#FEBF00]  text-blue-600 before:text-blue-600'
-                    : 'border-transparent before:text-slate-500 hover:bg-blue-50/40 hover:before:text-slate-900',
+                    ? 'border-blue-600 bg-[#4AB371]  text-blue-600 before:text-blue-600'
+                    : 'border-transparent bg-[#f2f2f2]',
                 )}
               > 
-              <div className='flex flex-col gap-2 text-center lg:w-[160px] text-black font-bold'>
+              <div className={`flex flex-col gap-2 text-lg text-center lg:w-[160px] ${ sectionIndex === activeIndex? "text-white ":"text-[#004c92]"} font-bold`}>
                 {section.title}
               </div>
               </a>
               {
                 sectionIndex === activeIndex ? (
-                  <div className='w-full bottom-0 absolute rounded-full h-1 bg-white'></div>
-                ):(<div className='w-full bottom-0 absolute rounded-full h-1 bg-[#E0E0E0]'></div>)
+                  <div className='w-full bottom-0 absolute rounded-full h-1 bg-[white]'></div>
+                ):(<div className='w-full bottom-0 absolute rounded-full h-1 bg-[#004c92]'></div>)
               }
               
             </div>

@@ -32,7 +32,7 @@ const cardData:CardData[] = [
 
 function Research() {
   return (
-    <div className='flex relative justify-center items-center min-h-screen  lg:py-32 bg-[#000C19]'>
+    <div className='flex relative justify-center items-center min-h-screen py-10 md:py-20  lg:py-32 bg-[#000C19]'>
         <div>
             <img src="/images/research/flash.svg" className='absolute top-0 left-0' alt="Research" />
         </div>
@@ -41,7 +41,7 @@ function Research() {
             <p className='text-center text-white  font-bold sm:text-[42px] text-[38px]'>
                 Join Our Research
             </p>
-            <p className='text-[#BDBDBD] mt-4 font-medium text-center'>
+            <p className='text-[#BDBDBD] mt-4 mx-4 md:mx-0 font-medium text-center'>
             We conduct organization research projects throughout the year. We 
 invite individuals to join any of the our research projects as participants, 
 as well as organizations as partners. Participants will enrich their 

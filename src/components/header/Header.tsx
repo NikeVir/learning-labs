@@ -13,7 +13,7 @@ import {
     Transition,
 } from "@headlessui/react";
 import Image from 'next/image'
-import { ChevronDownIcon,XMarkIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, XMarkIcon } from '@heroicons/react/20/solid'
 import { Button } from '../ui/Button';
 
 const products = [
@@ -93,15 +93,15 @@ const Header: React.FC = () => {
     return (
         <div className="min-h-[128px] flex justify-between items-center px-4 lg:px-[140px]">
             <div className="logo" >
-                <a href='/'><img src="/images/logo.svg" alt="Logo" className='sm:w-[15rem] w-[12rem]' /></a>
+                <a href='/'><img src="/images/logo.svg" alt="Logo" className=' sm:w-[15rem] w-[10rem]' /></a>
             </div>
-            <div className='flex gap-10 items-center justify-center'>
-            <div>
-                <Button variant={'primary'} className='bg-[#fe393c] text-[#000000] py-2 px-2'>Login</Button>
-            </div>
-            <div className="hamburger-menu cursor-pointer " onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-                <img src="/images/hamburger.svg"  alt="Logo" />
-            </div>
+            <div className='flex gap-5 sm:gap-10  items-center justify-center'>
+                <div>
+                    <Button variant={'primary'} className='bg-[#004c92] text-[#ffffff] py-2 px-2'>Login</Button>
+                </div>
+                <div className="hamburger-menu cursor-pointer " onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                    <img src="/images/hamburger.svg" alt="Logo" />
+                </div>
             </div>
 
             <Dialog
@@ -244,7 +244,7 @@ const Header: React.FC = () => {
                                 <a href="/Communities" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
                                     Communities
                                 </a>
-                                
+
 
                             </div>
                             <div className="py-6">

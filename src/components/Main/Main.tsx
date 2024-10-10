@@ -34,8 +34,8 @@ function Main() {
                                 <p className='text-center text-[#ECF5FF] md:text-xl lg:w-[814px]'>Indepth research insights transformed into powerful organization development tools & simulations, to empower business practioners to implement strategic interventions that drive growth & innovation</p>
                             </div>
                             <div className='flex gap-[20px] justify-center'>
-                                <Button variant={'primary'} className='bg-[#004c92] text-[#000000]'>Join Community</Button>
-                                <Button variant={'outline'} className='border-[#00b84d] text-[#00b84d]'>Let’s Collaborate</Button>
+                                <Button variant={'primary'} className='bg-[#004c92] text-[#ffffff]'>Join Community</Button>
+                                <Button variant={'outline'} className='border-[#ffffff] text-[#ffffff] '>Let’s Collaborate</Button>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ function Main() {
                 {
                     logos.map((logo, index) => (
                         <div className=' max-w-[180px] md:min-w-[188px] min-h-[40px] md:min-h-[66px] flex justify-center items-center w-[188px] border border-[#FAFAFA33]  rounded-[50px]'>
-                            <img key={index} src={logo} className='max-sm:max-h-[25px] max-sm:max-w-[80px]' alt="" />
+                            <img key={index} src={logo} className='max-sm:max-h-[25px] max-sm:max-w-[100px]' alt="" />
                         </div>
                     ))
                 }

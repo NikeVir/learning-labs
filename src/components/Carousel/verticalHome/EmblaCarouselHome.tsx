@@ -62,7 +62,7 @@ const EmblaCarouselHome: React.FC<PropType> = (props) => {
 
           {slides.map((slide, index) => (
             <div className="embla__slide embla__class-names " key={index}>
-              <HomeLeftCard data={slide} />
+              {/* <HomeLeftCard data={slide} /> */}
             </div>
           ))}
         </div>
