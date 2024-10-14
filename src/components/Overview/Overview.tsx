@@ -1,6 +1,13 @@
 'use client'
 import React, { useState } from 'react'
 import clsx from 'clsx'
+const logos = [
+    '/images/logos/lnt.svg',
+    '/images/logos/sam.svg',
+    '/images/logos/chayo.svg',
+    '/images/logos/pwc (2).svg',
+    '/images/logos/rel.svg',
+]
 
 const sections = [
     {
@@ -16,23 +23,23 @@ const sections = [
 function Overview() {
     let [activeIndex, setActiveIndex] = useState<number >(0);
     return (
-        <div className='flex justify-center'>
+        <div className='flex flex-col  items-center justify-center'>
 
-        <div className=' w-[95%] lg:w-[80%] flex-col flex  lg:min-h-screen my-10 justify-center items-center '>
-            <div className=' w-full'>
-                <div className=" sm:flex  sm:h-32 sm:justify-center  ">
+        <div className=' max-md:w-[100%]    flex-col flex justify-center items-center '>
+            <div className=' w-full '>
+                <div className=" sm:flex w-full sm:h-32 sm:justify-center  ">
                     <div
                         role="list"
-                        className="mb-[-2px]  flex max-md:flex-wrap gap-4  w-full justify-center border-black bg-white text-base font-medium text-slate-900 [counter-reset:section]"
+                        className="mb-[-2px]  flex gap-4   overflow-x-scroll md:justify-center w-full   bg-white text-base font-medium text-slate-900"
                         >
                         {sections.map((section, sectionIndex) => (
-                            <div key={section.id} className="flex relative w-[150px] h-[100px] lg:w-[236px]  xl:w-[276px] lg:h-[124px]  ">
+                            <div key={section.id} className="flex relative m-auto min-w-[150px] min-h-[80px] lg:w-[236px]  xl:w-[276px] md:w-full lg:h-[124px]  ">
                                 <a
                                     onClick={() => setActiveIndex(sectionIndex)}
                                     className={clsx(
-                                        'flex w-full flex-col items-center justify-center border-b-2 before:mb-2 before:font-mono',
+                                        'flex w-full flex-col items-center  justify-center border-b-2 before:mb-2 before:font-mono',
                                         sectionIndex === activeIndex
-                                            ? 'border-blue-600 bg-[#4AB371]  text-blue-600 before:text-blue-600'
+                                            ? 'border-blue-600 bg-[#004c92]  text-blue-600 before:text-blue-600'
                                             : 'border-transparent bg-[#f2f2f2]',
                                         )}
                                         >
@@ -61,6 +68,16 @@ function Overview() {
             </div>
 
         </div>
+        <div className='flex max-lg:flex-wrap items-center justify-center my-10 mb-20 gap-4 md:gap-8 '>
+                {
+                    logos.map((logo, index) => (
+                        <div className=' md:min-w-[188px] min-h-[40px] md:min-h-[66px] flex justify-center items-center min-w-[188px] border border-[#FAFAFA33]  rounded-[50px]'>
+                            <img key={index} src={logo} className='max-sm:min-h-[25px] max-sm:max-h-[80px] max-sm:min-w-[200px]' alt="" />
+                        </div>
+                    ))
+                }
+
+            </div>
                         </div>
     )
 }

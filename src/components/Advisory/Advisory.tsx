@@ -1,5 +1,6 @@
 import React from 'react'
 import AdvisoryCards from './AdvisoryCards'
+import SliderCard from '../Overview/SliderCard'
 
 interface CardData {
     image: string,
@@ -35,15 +36,19 @@ const cardData:CardData[] = [
 
 function Advisory() {
   return (
-    <div className='flex flex-col gap-16 py-16 lg:py-28'>
+    <div className='flex flex-col gap-16 py-16 lg:py-24'>
         <div>
         <p className='text-center font-bold text-[42px]'>
         Our Advisors
             </p></div>
-        <div className='flex  max-md:flex-wrap justify-center gap-6'>
+        {/* <div className='flex  max-md:flex-wrap justify-center gap-6'>
             {cardData.map((data, index) => (
                 <AdvisoryCards key={index} data={data} />
             ))}
+        </div> */}
+        <div className=' w-full'>
+
+            <SliderCard />
         </div>
     </div>
   )

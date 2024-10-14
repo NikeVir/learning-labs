@@ -66,7 +66,7 @@ export default function FooterLinks() {
     <footer aria-labelledby="footer-heading" className="">
 
       <div className="mx-auto   max-w-7xl px-6 pb-8 md:pt-8 xl:pt-16 sm:pt-24 lg:px-8 ">
-        <div className="lg:grid sm:grid-cols-3 lg:gap-8">
+        <div className="max-md:flex max-md:flex-col-reverse max-md:gap-20 lg:grid sm:grid-cols-3 lg:gap-8">
           <div className="  flex flex-col items-center justify-center  text-center lg:text-left">
             <div className="flex items-center -gap-10">
               <img src="/images/footer/footerlogo.svg" className="w-[70px] h-[70px]" alt="Logo" />

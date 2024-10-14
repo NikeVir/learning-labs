@@ -18,11 +18,11 @@ function AdvisoryCards({ data }: { data: CardData }) {
 
   return (
     <div
-      className={`relative cursor-pointer bg-white max-xl:w-[250px] max-xl:h-[350px] w-[368px] h-[480px] rounded-[20px] overflow-hidden transition-transform duration-300 ease-in-out ${isActive ? 'active' : ''}`}
+      className={`relative cursor-pointer bg-white max-md:w-[320px]  max-md:h-[400px] max-xl:w-[350px] max-xl:h-[350px] w-[420px] h-[480px] rounded-[20px] overflow-hidden transition-transform duration-300 ease-in-out ${isActive ? 'active' : ''}`}
       onClick={handleClick}
     >
       <div className={`absolute inset-0 flex justify-center items-center rounded-[20px] transition-transform duration-300 ease-in-out ${isActive ? 'transform -translate-y-full' : ''}`}>
-        <img src={data.image} alt='Advisory' className='max-xl:w-[250px] bg-cover max-xl:h-[350px] w-[368px] h-[480px] rounded-[20px]' />
+        <img src={data.image} alt='Advisory' className='max-xl:w-[350px] bg-cover max-xl:h-[400px] w-[420px] h-[480px] rounded-[20px]' />
       </div>
       <div className='absolute inset-0 w-full h-full rounded-[20px] bg-gradient-to-t from-black to-transparent'></div>
       <div className={`absolute left-5 bottom-5 transition-transform duration-300 ease-in-out ${isActive ? 'top-0 transform -translate-y-full' : ''}`}>
