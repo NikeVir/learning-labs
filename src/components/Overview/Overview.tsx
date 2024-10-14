@@ -30,10 +30,10 @@ function Overview() {
                 <div className=" sm:flex w-full sm:h-32 sm:justify-center  ">
                     <div
                         role="list"
-                        className="mb-[-2px]  flex gap-4   md:overflow-x-scroll md:justify-center w-full   bg-white text-base font-medium text-slate-900"
+                        className="mb-[-2px]  flex gap-4   max-md:overflow-x-scroll md:justify-center w-full   bg-white text-base font-medium text-slate-900"
                         >
                         {sections.map((section, sectionIndex) => (
-                            <div key={section.id} className="flex relative m-auto min-w-[150px] min-h-[80px] lg:w-[236px]  xl:w-[276px] md:w-full lg:h-[124px]  ">
+                            <div key={section.id} className="flex relative m-auto min-w-[150px] min-h-[80px] lg:w-[236px]  xl:w-[276px] md:min-w-[150px] lg:h-[124px]  ">
                                 <a
                                     onClick={() => setActiveIndex(sectionIndex)}
                                     className={clsx(

@@ -88,7 +88,7 @@ function SliderCard() {
     ]
   };
   return (
-    <div className="slider-container md:min-h-[40vh] overflow-x-hidden overflow-y-visible ">
+    <div className="slider-container h-[70vh] md:min-h-[40vh] overflow-x-hidden overflow-y-visible ">
       <Slider {...settings}>
         
         {cardData.map((data, index) => (
