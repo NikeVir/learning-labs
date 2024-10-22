@@ -1,3 +1,4 @@
+import CommunityFaq from '@/components/Faq/CommunityFaq'
 import FAQs from '@/components/Faq/Faq'
 import FAQ2s from '@/components/Faq/Faq2'
 import Footer from '@/components/footer/Footer'
@@ -12,28 +13,65 @@ function page() {
     <div className='bg-[#f1fff6]'>
       <Header />
       <section className='relative overflow-hidden '>
-          <img src='/images/bann1.jpg' alt='about' className='w-full blur-[2px]  h-[70vh] absolute' />
-          <div className='absolute  bg-[black] opacity-50 w-[100%] h-[70vh] '></div>
+        <img src='/images/bann1.jpg' alt='about' className='w-full blur-[2px]  h-[70vh] absolute' />
+        <div className='absolute  bg-[black] opacity-50 w-[100%] h-[70vh] '></div>
 
-          <div className='relative flex flex-col h-[70vh] items-center justify-center' >
+        <div className='relative flex flex-col h-[70vh] items-center justify-center' >
 
-            <div className='w-[75%] '>
-              <p className='text-white text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold  '>
+          <div className='w-[75%] '>
+            <p className='text-white text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold  '>
               "The best collaborations create something bigger than the sum of what each person can create on their own "
 
-              </p>
+            </p>
 
-              <p className=' text-[#ffc000]  md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
+            <p className=' text-[#ffc000]  md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
               We We support our community members with our professional tools and indepth knowhow, to augument their exceptional facilitation capabilities to unleash unparalleled growth & prosperity in client organizations.
 
-              </p>
-            </div>
+            </p>
           </div>
-        </section>
+        </div>
+      </section>
+      <section className='flex justify-center items-center my-10'>
+        <div className='w-[90%] xl:w-[80%] flex max-md:flex-wrap justify-center max-md:gap-10'>
+
+          <div className=' max-lg:basis-1/3 max-md:min-w-full lg:min-w-[420px]  xl:max-h-[882px]  rounded-xl flex flex-col  gap-4 p-11 bg-[#002060] shadow-logobox'>
+            <div className='relative '>
+              <img src='/images/communities/background.svg' className='absolute left-[5%] top-[20%]' alt='community' />
+              <div className='relative'>
+
+                <div className='text-3xl sm:text-[2.6rem] text-white sm:leading-[50px] font-medium text-center'>
+                  Join OLL community
+                </div>
+                <div className=' mt-2 font-medium text-[#88beda] text-lg '>
+                  Join OLL community via linked or gmail.
+                  You may also choose to fill our short
+                  registration form and submit.
+                  <p>
+
+                    Looking forward to co-create with you!!
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+            <div className='flex flex-col mt-6 justify-center items-center gap-4 mx-4 '>
+              <Button variant={'primary'} className='w-full max-w-[344px] max-sm:text-base max-sm:py-4'>Join Community</Button>
+              <Button variant={'white'} className='w-full max-w-[344px] flex items-center justify-center gap-4 max-sm:text-base max-sm:py-4'> <img src="images/communities/google.svg" alt='' /> Join Via Google</Button>
+              <Button variant={'primary'} className='w-full max-w-[344px] flex items-center justify-center bg-[linear-gradient(135deg,#2489BE_14.64%,#0575B3_85.36%)] gap-4 max-sm:text-base max-sm:py-4'> <img src="images/communities/linkedin.svg" alt='' /> Join Via Linked In</Button>
+            </div>
+
+          </div>
+          <div className='max:lg:basis-1/2 '>
+            <CommunityFaq colortheme='blue' />
+          </div>
+        </div>
+      </section>
       <div className='flex justify-center '>
 
-        <div className='2xl:w-[80%] mt-10 xl:w-[90%] w-[95%] flex  max-lg:flex-col gap-8'>
-          <div className='xl:basis-2/3   xl:pr-5 flex flex-col items-center justify-center gap-[66px]'>
+        <div className='2xl:w-[80%] mt-10` xl:w-[90%] w-[95%] flex  max-lg:flex-col gap-8'>
+          {/* <div className='xl:basis-2/3   xl:pr-5 flex flex-col items-center justify-center gap-[66px]'> */}
+          <div className=' flex flex-col items-center justify-center gap-[66px]'>
             {/* <div className='flex relative z-10   items-center'>
               <img src='/images/communities/background.svg' className='absolute left-[5%] top-[20%]' alt='community' />
               <div className=' relative flex flex-col gap-16'>
@@ -85,11 +123,10 @@ function page() {
 
 
               </div>
-
             </div> */}
             <div className=' items-center justify-center '>
 
-              <div className='max-lg:text-center'>
+              <div className='text-center mt-10'>
                 <div className='text-3xl sm:text-[2.6rem] sm:leading-[50px] font-bold '>
                   who will benefit by doing the OLL community
                 </div>
@@ -138,7 +175,7 @@ function page() {
 
               </div>
             </div>
-            <div className='flex justify-center'>
+            {/* <div className='flex justify-center'>
 
 
               <div className='md:w-[691px] h-[940px]  rounded-xl  relative overflow-hidden'>
@@ -156,11 +193,13 @@ function page() {
               <div>
               </div>
 
-            </div>
-              <FAQ2s colortheme='blue' />
+            </div> */}
+
+            {/* <FAQ2s colortheme='blue' /> */}
 
           </div>
-          <div className=' max-lg:basis-1/3 lg:w-[442px] border xl:max-h-[882px]  rounded-xl flex flex-col  gap-4 p-11 bg-white shadow-logobox'>
+          
+          {/* <div className=' max-lg:basis-1/3 lg:w-[442px] border xl:max-h-[882px]  rounded-xl flex flex-col  gap-4 p-11 bg-white shadow-logobox'>
             <div>
               <div className='text-3xl sm:text-[2.6rem] sm:leading-[50px] font-medium text-center'>
                 Join Community
@@ -189,11 +228,21 @@ function page() {
               <Button variant={'primary'} className='w-full max-w-[344px] flex items-center justify-center bg-[linear-gradient(135deg,#2489BE_14.64%,#0575B3_85.36%)] gap-4 max-sm:text-base max-sm:py-4'> <img src="images/communities/linkedin.svg" alt='' /> Join Via Linked In</Button>
             </div>
 
-          </div>
+          </div> */}
 
         </div>
 
       </div>
+      <div className='flex justify-center relative py-10 min-h-screen overflow-hidden'>
+              <img src='/images/knowledge/frame.png' className='absolute  min-h-full w-full' alt='partner' />
+              <div className='lg:w-[80%] w-[95%] flex max-md:flex-col gap-16 relative pt-24'>
+                <div className='md:w-[528px] pt-6 max-md:text-center'>
+                  <p className='text-white font-bold  text-[50px]'>Objective</p>
+                  <p className='text-[#A8A8A8] text-base'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <Objectives />
+              </div>
+            </div>
 
       <Footer />
 

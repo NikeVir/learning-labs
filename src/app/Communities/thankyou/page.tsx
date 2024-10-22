@@ -31,28 +31,40 @@ function page() {
                             <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-20'>
                                 <div className='flex flex-col gap-5'>
                                     <img src='/images/communities/th1.svg' className='w-[45px]' alt='benefits' />
-                                    <p className='w-[240px] text-sm font-medium text-[#161616]'>Identify the current practices, approaches & challenges in the industry via interview</p>
+                                    <p className='w-[240px] text-sm font-medium text-[#161616]'>Unlimited
+                                        access to our
+                                        knowledge repository</p>
                                 </div>
                                 <div className='flex flex-col gap-5'>
                                     <img src='/images/communities/th2.svg' className='w-[45px]' alt='benefits' />
-                                    <p className='w-[240px] text-sm font-medium text-[#161616]'>Identify the current practices, approaches & challenges in the industry via interview</p>
+                                    <p className='w-[240px] text-sm font-medium text-[#161616]'>Participate
+                                        in our research as well
+                                        as client projects</p>
                                 </div>
                                 <div className='flex flex-col gap-5'>
                                     <img src='/images/communities/th3.svg' className='w-[45px]' alt='benefits' />
-                                    <p className='w-[240px] text-sm font-medium text-[#161616]'>Identify the current practices, approaches & challenges in the industry via interview</p>
+                                    <p className='w-[240px] text-sm font-medium text-[#161616]'>Invitation to
+                                        webinars with subject
+                                        experts on global best
+                                        practices</p>
                                 </div>
                                 <div className='flex flex-col gap-5'>
                                     <img src='/images/communities/th4.svg' className='w-[45px]' alt='benefits' />
-                                    <p className='w-[240px] text-sm font-medium text-[#161616]'>Identify the current practices, approaches & challenges in the industry via interview</p>
+                                    <p className='w-[240px] text-sm font-medium text-[#161616]'>Participate
+                                        in our research as well
+                                        as client projects</p>
                                 </div>
                                 <div className='flex flex-col gap-5'>
                                     <img src='/images/communities/th5.svg' className='w-[45px]' alt='benefits' />
-                                    <p className='w-[240px] text-sm font-medium text-[#161616]'>Identify the current practices, approaches & challenges in the industry via interview</p>
+                                    <p className='w-[240px] text-sm font-medium text-[#161616]'>Subscribe
+                                        to our proprietary
+                                        assessment tools &
+                                        learning materials</p>
                                 </div>
-                                <div className='flex flex-col gap-5'>
+                                {/* <div className='flex flex-col gap-5'>
                                     <img src='/images/communities/th6.svg' className='w-[45px]' alt='benefits' />
                                     <p className='w-[240px] text-sm font-medium text-[#161616]'>Identify the current practices, approaches & challenges in the industry via interview</p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -67,11 +79,11 @@ function page() {
                                     <div className='flex gap-[74px]'>
                                         <div className='bg-[#F4F4F4] min-w-[60px] min-h-[60px] rounded-[100%] text-center flex justify-center items-center text-2xl font-semibold'>1</div>
                                         <img src='/images/communities/line.svg' className='w-[158px]' alt='benefits' />
-                                        
+
                                     </div>
                                     <div className='gap-5 flex flex-col'>
                                         <p className='text-lg font-bold'>
-                                        Login it with Google
+                                            Login it with Google
                                         </p>
                                         <p className='xl:w-[284px] text-sm font-medium text-[#161616]'>Identify the current practices, approaches & challenges in the industry via interview</p>
 
@@ -81,11 +93,11 @@ function page() {
                                     <div className='flex gap-[74px]'>
                                         <div className='bg-[#F4F4F4] min-w-[60px] min-h-[60px] rounded-[100%] text-center flex justify-center items-center text-2xl font-semibold'>2</div>
                                         <img src='/images/communities/line.svg' className='w-[158px]' alt='benefits' />
-                                        
+
                                     </div>
                                     <div className='gap-5 flex flex-col'>
                                         <p className='text-lg font-bold'>
-                                        Join The Community
+                                            Join The Community
                                         </p>
                                         <p className='xl:w-[284px] text-sm font-medium text-[#161616]'>Identify the current practices, approaches & challenges in the industry via interview</p>
 
@@ -94,25 +106,25 @@ function page() {
                                 <div className='flex flex-col  gap-5'>
                                     <div className='flex gap-[74px]'>
                                         <div className='bg-[#F4F4F4] min-w-[60px] min-h-[60px] rounded-[100%] text-center flex justify-center items-center text-2xl font-semibold'>3</div>
-                                     
-                                        
+
+
                                     </div>
                                     <div className='gap-5 flex flex-col'>
                                         <p className='text-lg font-bold'>
-                                        Start Engaging
+                                            Start Engaging
                                         </p>
                                         <p className='xl:w-[284px] text-sm font-medium text-[#161616]'>Identify the current practices, approaches & challenges in the industry via interview</p>
 
                                     </div>
                                 </div>
-                                
+
 
                             </div>
                         </div>
                     </div>
                     <div className='flex justify-center '>
-                                    <Button variant={'primary'}>Join Community</Button>
-                                </div>
+                        <Button variant={'primary'}>Join Community</Button>
+                    </div>
 
                 </div>
             </div>

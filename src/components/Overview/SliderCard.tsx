@@ -53,7 +53,19 @@ function SliderCard() {
     speed: 500,
     centerMode: true,
     centerPadding: "15%",
+    
     responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+          centerPadding: "0%",
+        }
+      },
       {
         breakpoint: 1024,
         settings: {

@@ -28,8 +28,14 @@ const FeatureDate =[
 
 function Features() {
   return (
-    <div className='bg-[#001631] py-10 flex justify-center'>
-        <div className='   w-[95%] flex flex-col gap-16   '>
+    <div className='relative bg-[#001631] py-10 md:pb-20 flex justify-center'>
+        <div>
+                <img src="/images/research/flash.svg" className='absolute top-0 left-0' alt="Research" />
+            </div>
+        <div className='relative   w-[95%] flex flex-col gap-16   '>
+            <div>
+                <h1 className='text-white text-3xl lg:text-5xl text-center mt-5 font-bold'>Industries in focus</h1>
+            </div>
             <div className='flex justify-center'>
                 <div className='bg-[rgba(255,255,255,0.12)] max-lg:overflow-x-scroll  max-lg:w-auto  w-[948px] rounded-[888px] flex justify-center px-4 max-lg:py-4 py-2 max-lg:gap-x-[20px]  max-lg:gap-y-[10px] gap-[42px]'>
 
@@ -71,9 +77,9 @@ function Features() {
                 </div>
 
             </div>
-            <div className='flex items-center justify-center'>
+            {/* <div className='flex items-center justify-center'>
                 <Button variant='primary' >Read More</Button>
-            </div>
+            </div> */}
 
         </div>
     </div>

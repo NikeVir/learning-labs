@@ -2,6 +2,7 @@ import Advisory from '@/components/Advisory/Advisory'
 import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
 import Partners from '@/components/Partners/Partners'
+import Partners2 from '@/components/Partners/Partners2'
 import Teams from '@/components/team/Teams'
 import { Button } from '@/components/ui/Button'
 import React from 'react'
@@ -73,10 +74,10 @@ function page() {
             </div>
           </div>
         </section>
-        <section className='flex justify-center items-center' >
-          <div className='flex gap-5 w-[70%] border-2 border-[#194d92] p-5 rounded-xl my-10  items-center justify-center'>
-            <div className='basis-1/2'>
-              <p className='text-[#194d92] text-2xl font-bold'>The Organization Learning Labs is an unique Organization Development Laboratory
+        <section className='flex  justify-center items-center' >
+          <div className='flex max-md:flex-wrap gap-5 w-[90%] lg:w-[70%] border-2 border-[#194d92] p-5 rounded-xl my-10  items-center justify-center'>
+            <div className='md:basis-1/2'>
+              <p className='text-[#194d92] text-xl md:text-2xl font-bold'>The Organization Learning Labs is an unique Organization Development Laboratory
                 where we conduct organization research on a continuous basis in collaboration with
                 research focused institutions, thought leaders and leading organizations.
                 <br/>
@@ -89,7 +90,7 @@ function page() {
                 organizations to evolve and innovate. This drives unparalleled growth, efficiency, and
                 innovation within the organizations.</p>
             </div>
-            <div className='flex basis-1/2 flex-col gap-5'>
+            <div className='flex md:basis-1/2 flex-col gap-5'>
               {
                 data.map((item, key) => (
                   <div key={key} className=' border-[3px] p-4 border-[#00b050] rounded-xl'>
@@ -242,6 +243,10 @@ function page() {
         </div>
       </section>
       {/* <Partners /> */}
+      <div className='bg-[#001631]'>
+
+      <Partners2/>
+      </div>
       <Advisory />
       <Footer />
 
