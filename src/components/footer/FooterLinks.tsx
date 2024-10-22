@@ -24,6 +24,7 @@ export default function FooterLinks() {
       { name: "Hospitality", href: "/industries/HealthCare" },
       { name: "Healthcare", href: "/industries/Hospitality" },
       { name: "Pharmaceutical", href: "/industries/Pharmaceutical" },
+      { name: "Retail", href: "/industries/Retail" },
       { name: "Information Technology", href: "/industries/Retail" },
     ],
     resources: [
