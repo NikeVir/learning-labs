@@ -70,11 +70,11 @@ function Research() {
         ]
     };
     return (
-        <div className='flex relative justify-center  items-center lg:min-h-screen py-10 md:py-20  lg:py-16 '>
+        <div className='flex relative justify-center  items-center lg:min-h-screen py-10 md:py-20  lg:py-10 '>
             <div>
                 {/* <img src="/images/research/flash.svg" className='absolute top-0 left-0' alt="Research" /> */}
             </div>
-            <div className=' lg:w-[95%] xl:w-[80%] items-center w-full flex flex-col gap-16 '>
+            <div className=' lg:w-[95%] xl:w-[80%] items-center w-full flex flex-col gap-8 '>
                 <div >
                     <p className='text-center text-[#001631]  font-bold sm:text-[42px] text-[38px]'>
                         Join Our Research

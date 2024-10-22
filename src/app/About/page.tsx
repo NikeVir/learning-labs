@@ -75,9 +75,9 @@ function page() {
           </div>
         </section>
         <section className='flex  justify-center items-center' >
-          <div className='flex max-md:flex-wrap gap-5 w-[90%] lg:w-[70%] border-2 border-[#194d92] p-5 rounded-xl my-10  items-center justify-center'>
-            <div className='md:basis-1/2'>
-              <p className='text-[#194d92] text-xl md:text-2xl font-bold'>The Organization Learning Labs is an unique Organization Development Laboratory
+          <div className='flex max-md:flex-wrap gap-5 w-[90%] lg:w-[70%] border-2 border-[#194d92] p-5 rounded-xl my-10  '>
+            <div className='md:basis-1/2 '>
+              <p className='text-[#194d92]  text-justify text-xl md:text-2xl font-bold'>The Organization Learning Labs is an unique Organization Development Laboratory
                 where we conduct organization research on a continuous basis in collaboration with
                 research focused institutions, thought leaders and leading organizations.
                 <br/>
@@ -95,7 +95,7 @@ function page() {
                 data.map((item, key) => (
                   <div key={key} className=' border-[3px] p-4 border-[#00b050] rounded-xl'>
                     <p className='text-[#004c92] text-xl font-bold'>{item.title}</p>
-                    <p className='text-[#595959] text-base font-medium'>{item.data}</p>
+                    <p className='text-[#595959] text-base text-justify font-medium'>{item.data}</p>
                   </div>
                 ))
               }
