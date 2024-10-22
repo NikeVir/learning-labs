@@ -1,12 +1,6 @@
-import * as React from "react";
-const CustomLearning = (props:any) => (
+
   <svg
-    width={20}
-    height={22}
-    viewBox="0 0 20 22"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
+width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg"
   >
     <path
       fillRule="evenodd"
@@ -39,5 +33,4 @@ const CustomLearning = (props:any) => (
       fill="#262626"
     />
   </svg>
-);
-export default CustomLearning;
+

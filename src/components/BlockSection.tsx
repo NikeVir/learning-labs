@@ -118,12 +118,36 @@ export default function Blog({ filter }: { filter: string | null }) {
 
 
   return (
-    <section className=" overflow-hidden flex justify-center bg-[#f1fff6] mb-10">
-      <div className="lg:w-[80%] w-[95%] overflow-hidden flex max-md:flex-col justify-center">
+    <section className=" overflow-hidden flex flex-col items-center  bg-[#f1fff6] mb-10 ">
+       <section className='relative overflow-hidden '>
+          <img src='/images/bann3.jpg' alt='about' className='w-full blur-[2px]  h-[80vh] absolute' />
+          <div className='absolute  bg-[black] opacity-50 w-[100%] h-[70vh] '></div>
+
+          <div className='relative flex flex-col h-[70vh] items-center justify-center' >
+
+            <div className='w-[75%] '>
+              <p className='text-white text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold '>
+              “Research is seeing what everybody else has seen and thinking what nobody 
+              else has thought” 
+              </p>
+              <p className='text-right mt-5 text-white md:text-xl lg:text-2xl font-medium '>
+              - Albert Szent-Györgyi,
+              </p>
+              <p className='text-right text-2xl text-white lg:text-2xl mb-5  font-medium ' >  Nobel Prize winner</p>
+              <p className=' text-[#e9bd16] md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
+              "A synopsis of the research inhouse as well as from our learned community is 
+provided here. We believe they might point you in the right direction to find 
+solutions to your organizational challenges”
+
+
+              </p>
+            </div>
+          </div>
+        </section>
+      <div className="lg:w-[80%] w-[95%] mt-10 overflow-hidden flex max-md:flex-col justify-center">
 
       
       <div className=" flex flex-col gap-16">
-        <div className="mt-2 flex gap-2"><a className="m">Home</a>/<a>Blog</a></div>
 
         <div className="bg-white rounded-xl py-[15px] px-[22px] flex flex-col gap-4 border border-[#F3F3F3]">
 

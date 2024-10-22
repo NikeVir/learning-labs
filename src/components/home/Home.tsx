@@ -12,6 +12,7 @@ import EmblaCarouselHome from '../Carousel/verticalHome/EmblaCarouselHome'
 import { EmblaOptionsType } from 'embla-carousel'
 import '@/components/Carousel/verticalHome/css/emblahome.css'
 import FloatingFooter from '../footer/FloatingFooter'
+import OurSolution from '../Overview/OurSolution'
 
 interface ContentItem {
   title: string;
@@ -125,13 +126,14 @@ function Home() {
 
       <div id="table-of-contents" className=' bg-white z-50  '>
         <Overview />
+        <OurSolution />
       </div>
 
 
         <Features />
       </div>
 
-      <Advisory />
+      {/* <Advisory /> */}
       <Research />
       <Footer />
       

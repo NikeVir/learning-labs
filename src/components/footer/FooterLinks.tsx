@@ -7,30 +7,29 @@ type IconProps = React.SVGProps<SVGSVGElement>;
 export default function FooterLinks() {
   const navigation = {
     company: [
-      { name: "About", href: "/About" },
+      { name: "About us", href: "/About" },
       { name: "Careers", href: "/Proxies/" },
-      { name: "Affiliates", href: "/Proxies/ipv6" },
-      { name: "Press", href: "/Proxies/ipv6" },
-      { name: "Investers", href: "/Proxies/ipv6" },
-      { name: "Legal & Privacy", href: "/Proxies/ipv6" },
+      { name: "Our Advisors", href: "/Proxies/ipv6" },
+      { name: "Contact Us", href: "/Proxies/ipv6" },
     ],
     features: [
-      { name: "Wallet", href: "/contact-us" },
-      { name: "Card", href: "/Ethics" },
-      { name: "Dashboard", href: "/FAQ" },
-      { name: "Portfolio", href: "/Blog?text=guide" },
+      { name: "Maturity assessment tools", href: "/" },
+      { name: "Immersive Business simulations", href: "/" },
+      { name: " On-demand research & consultation", href: "/" },
+      { name: " Custom learning program development", href: "/" },
 
     ],
     developers: [
-      { name: "Cloud", href: "/Solutions/ad-verification" },
-      { name: "Wallet SDK", href: "/Solutions/social-media" },
-      { name: "API Access", href: "/Solutions/cyber-security" },
+      { name: "Banking & Insurance", href: "/industries/Bank&Finance" },
+      { name: "Hospitality", href: "/industries/HealthCare" },
+      { name: "Healthcare", href: "/industries/Hospitality" },
+      { name: "Pharmaceutical", href: "/industries/Pharmaceutical" },
+      { name: "Information Technology", href: "/industries/Retail" },
     ],
     resources: [
-      { name: "Blog", href: "/Blog" },
-      { name: "Help & Support", href: "/Communities" },
-      { name: "Customers Stories", href: "/refund-policy" },
-      { name: "FAQ", href: "/FairUsagePolicy" },
+      { name: "Benefits", href: "/Blog" },
+      { name: " OLL community portal", href: "/Communities" },
+      { name: "FAQ", href: "/refund-policy" },
     ],
     social: [
       {
@@ -91,7 +90,7 @@ export default function FooterLinks() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-[16px] font-bold leading-6  text-[#FEBF00]">
-                  Company
+                Company
                 </h3>
                 <ul role="list" className="mt-4 space-y-2">
                   {navigation.company.map((item) => (
@@ -108,7 +107,7 @@ export default function FooterLinks() {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-[16px] font-bold leading-6  text-[#FEBF00]">
-                  Features
+                Solutions
                 </h3>
                 <ul role="list" className="mt-4 space-y-2">
                   {navigation.features.map((item) => (
@@ -127,7 +126,7 @@ export default function FooterLinks() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-[16px] font-bold leading-6  text-[#FEBF00]">
-                  Developers
+                Industries in focus
                 </h3>
                 <ul role="list" className="mt-4 space-y-2">
                   {navigation.developers.map((item) => (
@@ -144,7 +143,7 @@ export default function FooterLinks() {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-[16px] font-bold leading-6 text-[#FEBF00]">
-                  Resources
+                OLL community
                 </h3>
                 <ul role="list" className="mt-4 space-y-2">
                   {navigation.resources.map((item) => (

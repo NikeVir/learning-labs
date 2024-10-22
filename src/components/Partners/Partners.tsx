@@ -3,7 +3,7 @@ import PartnerCard from './PartnerCard'
 
 function Partners() {
   return (
-    <div className='bg-[#001631] py-20 flex justify-center items-center'>
+    <div className=' py-20 flex justify-center items-center'>
         <div className='w-[95%] xl:w-[80%]  '>
             <div className=' flex justify-center text-center'>
                 <div className='max-w-[774px] flex flex-col gap-4'>

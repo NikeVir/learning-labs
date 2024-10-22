@@ -90,7 +90,9 @@ function page() {
                 <LastCard data = {DataLast} />
             </div>
             <IndustryFeature/>
-            <Partners/>
+            <div className='bg-[#001631]'>
+                <Partners/>
+            </div>
             <SuccessStories/>
             <Footer />
         </div>

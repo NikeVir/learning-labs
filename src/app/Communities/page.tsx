@@ -11,11 +11,30 @@ function page() {
   return (
     <div className='bg-[#f1fff6]'>
       <Header />
+      <section className='relative overflow-hidden '>
+          <img src='/images/bann1.jpg' alt='about' className='w-full blur-[2px]  h-[70vh] absolute' />
+          <div className='absolute  bg-[black] opacity-50 w-[100%] h-[70vh] '></div>
+
+          <div className='relative flex flex-col h-[70vh] items-center justify-center' >
+
+            <div className='w-[75%] '>
+              <p className='text-white text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold  '>
+              "The best collaborations create something bigger than the sum of what each person can create on their own "
+
+              </p>
+
+              <p className=' text-[#ffc000]  md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
+              We We support our community members with our professional tools and indepth knowhow, to augument their exceptional facilitation capabilities to unleash unparalleled growth & prosperity in client organizations.
+
+              </p>
+            </div>
+          </div>
+        </section>
       <div className='flex justify-center '>
 
-        <div className='2xl:w-[80%] xl:w-[90%] w-[95%] flex  max-lg:flex-col gap-8'>
+        <div className='2xl:w-[80%] mt-10 xl:w-[90%] w-[95%] flex  max-lg:flex-col gap-8'>
           <div className='xl:basis-2/3   xl:pr-5 flex flex-col items-center justify-center gap-[66px]'>
-            <div className='flex relative z-10   items-center'>
+            {/* <div className='flex relative z-10   items-center'>
               <img src='/images/communities/background.svg' className='absolute left-[5%] top-[20%]' alt='community' />
               <div className=' relative flex flex-col gap-16'>
                 <div className=' lg:text-left max-sm:my-10  text-center flex justify-center items-center'>
@@ -67,7 +86,7 @@ function page() {
 
               </div>
 
-            </div>
+            </div> */}
             <div className=' items-center justify-center '>
 
               <div className='max-lg:text-center'>

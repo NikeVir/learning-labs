@@ -128,7 +128,7 @@ const Header: React.FC = () => {
                     <div className="flow-root mt-10">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="py-6 space-y-2">
-                                <Disclosure as="div" className="-mx-3">
+                                {/* <Disclosure as="div" className="-mx-3">
                                     {({ open }) => (
                                         <>
                                             <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
@@ -155,7 +155,7 @@ const Header: React.FC = () => {
                                             </DisclosurePanel>
                                         </>
                                     )}
-                                </Disclosure>
+                                </Disclosure> */}
 
                                 {/* <Disclosure as="div" className="-mx-3">
                                     {({ open }) => (
@@ -185,7 +185,7 @@ const Header: React.FC = () => {
                                         </>
                                     )}
                                 </Disclosure> */}
-                                <Disclosure as="div" className="-mx-3">
+                                {/* <Disclosure as="div" className="-mx-3">
                                     {({ open }) => (
                                         <>
                                             <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
@@ -212,7 +212,7 @@ const Header: React.FC = () => {
                                             </DisclosurePanel>
                                         </>
                                     )}
-                                </Disclosure>
+                                </Disclosure> */}
                                 {/* <Disclosure as="div" className="-mx-3">
                                     {({ open }) => (
                                         <>
@@ -241,8 +241,18 @@ const Header: React.FC = () => {
                                         </>
                                     )}
                                 </Disclosure> */}
+                                <a href="/" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
+                                    Home
+                                </a>
+                                <a href="/About" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
+                                    About Us
+                                </a>
                                 <a href="/Communities" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
-                                    Communities
+                                    OLL Communities
+                                </a>
+                                <a href="/Blog" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
+                                    Research synopsis
+
                                 </a>
 
 

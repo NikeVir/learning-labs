@@ -14,8 +14,8 @@ function page() {
         <div>
             <div className='bg-[linear-gradient(345.39deg,#FFFFFF_9.63%,#F1FFF6_51.2%)]'>
 
-                <Header2 />
-                <div className='flex justify-center mb-20 items-center'>
+                <Header />
+                <div className='flex justify-center mb-20 mt-10 items-center'>
                     <div className='lg:w-[80%] flex flex-col gap-16'>
                         <div className=' text-center flex justify-center'>
                             <div className='lg:w-[826px] max-w-[80%]'>
@@ -28,10 +28,10 @@ function page() {
                             </div>
                         </div>
                         <div>
-                            <div className='flex gap-[20px] justify-center'>
-                                <Button variant={'primary'}>Join Community</Button>
-                                <Button variant={'white'}>Let’s Collaborate</Button>
-                            </div>
+                        <div className='flex gap-[20px] justify-center  '>
+                            <Button variant={'primary'}  className='max-md:text-sm'> Join Community</Button>
+                            <Button variant={'white'} className='border-[#C5CFDA] text-[#004B96] max-md:text-sm bg-transparent hover:bg-white font-medium'> Let’s Collaborate</Button>
+                        </div>
                         </div>
                         <div>
                             <section className='flex justify-center '>
@@ -80,9 +80,15 @@ function page() {
                 </div>
 
             </div>
-            <Partners />
+            <div className='bg-[#040509]'>
+                <Partners/>
+            </div>
             <Challenges />
             <FAQs colortheme='blue' />
+            <div className='flex gap-[20px] justify-center  mb-20'>
+                            <Button variant={'primary'}  className='max-md:text-sm'> Join Community</Button>
+                            <Button variant={'white'} className='border-[#C5CFDA] text-[#004B96] max-md:text-sm bg-transparent hover:bg-white font-medium'> Let’s Collaborate</Button>
+                        </div>
             <Footer />
 
         </div>

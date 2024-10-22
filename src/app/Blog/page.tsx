@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <main className="bg-[#f1fff6]">
       <Header />
-      <div className="mt-5">
+      <div className="">
         <Suspense fallback={<div>Loading...</div>}>
           <BlogWithSearchParams />
         </Suspense>

@@ -70,16 +70,16 @@ function Research() {
         ]
     };
     return (
-        <div className='flex relative justify-center items-center lg:min-h-screen py-10 md:py-20  lg:py-32 bg-[#000C19]'>
+        <div className='flex relative justify-center  items-center lg:min-h-screen py-10 md:py-20  lg:py-16 '>
             <div>
-                <img src="/images/research/flash.svg" className='absolute top-0 left-0' alt="Research" />
+                {/* <img src="/images/research/flash.svg" className='absolute top-0 left-0' alt="Research" /> */}
             </div>
             <div className=' lg:w-[95%] xl:w-[80%] items-center w-full flex flex-col gap-16 '>
                 <div >
-                    <p className='text-center text-white  font-bold sm:text-[42px] text-[38px]'>
+                    <p className='text-center text-[#001631]  font-bold sm:text-[42px] text-[38px]'>
                         Join Our Research
                     </p>
-                    <p className='text-[#BDBDBD] mt-4 mx-4 md:mx-0 font-medium text-center'>
+                    <p className='text-[#001631] mt-4 mx-4 md:mx-0 font-medium text-center'>
                         We conduct organization research projects throughout the year. We
                         invite individuals to join any of the our research projects as participants,
                         as well as organizations as partners. Participants will enrich their
@@ -88,7 +88,7 @@ function Research() {
                         receive a copy of the completed research paper on completion.
                     </p>
                 </div>
-                <div className='slider-container overflow-hidden lg:min-h-[80vh] w-full  '>
+                <div className='slider-container overflow-hidden lg:min-h-[70vh] w-full  '>
                 <Slider {...settings}>
                         {cardData.map((data, index) => (
                             <div className="flex flex-col  justify-center items-center lg:px-2 ">
@@ -99,7 +99,8 @@ function Research() {
                 </div>
 
                 <div className='flex justify-center'>
-                    <Button variant={'white'} className='rounded-[30px] text-[14px] w-[285px]'> TRENDING REPORT</Button>
+                    <Button variant={'white'} className='rounded-[30px] bg-[#00b84d] text-white text-[14px] w-[285px]'> Research 
+                    synopsis</Button>
                 </div>
             </div>
               

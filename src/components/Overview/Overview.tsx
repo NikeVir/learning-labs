@@ -25,8 +25,8 @@ function Overview() {
     return (
         <div className='flex flex-col  items-center justify-center'>
 
-        <div className=' max-md:w-[100%]    flex-col flex justify-center items-center '>
-            <div className=' w-full '>
+        <div className=' max-md:w-[100%] w-full bg-[#001631]    flex-col flex justify-center items-center '>
+            {/* <div className=' w-full '>
                 <div className=" sm:flex w-full sm:h-32 sm:justify-center  ">
                     <div
                         role="list"
@@ -57,18 +57,18 @@ function Overview() {
                         ))}
                     </div>
                 </div>
-            </div>
-            <div className='w-full border  flex justify-center my-5'>
+            </div> */}
+            <div className='w-full   flex justify-center my-5'>
 
-                <div className='w-full border'>
-                    <iframe  className='min-h-[50vh] lg:min-h-[70vh] min-w-[100%]' src={sections[activeIndex].link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
+                <div className='w-full  p-[5%]'>
+                    <iframe  className='min-h-[50vh] lg:min-h-[80vh] min-w-[100%]' src={sections[activeIndex].link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
 
                 </div>
 
             </div>
 
         </div>
-        <div className='flex max-lg:flex-wrap items-center justify-center my-10 mb-20 gap-4 md:gap-8 '>
+        {/* <div className='flex max-lg:flex-wrap items-center justify-center my-10 mb-20 gap-4 md:gap-8 '>
                 {
                     logos.map((logo, index) => (
                         <div className=' md:min-w-[188px] min-h-[40px] md:min-h-[66px] flex justify-center items-center min-w-[188px] border border-[#FAFAFA33]  rounded-[50px]'>
@@ -77,7 +77,7 @@ function Overview() {
                     ))
                 }
 
-            </div>
+            </div> */}
                         </div>
     )
 }
