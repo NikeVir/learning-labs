@@ -167,7 +167,7 @@ function page() {
 
         </div>
       </section>
-      <Teams />
+      {/* <Teams /> */}
       <section className='flex justify-center my-20'>
         <div className='lg:w-[80%] w-[95%] flex max-lg:flex-wrap item-center justify-center gap-5'>
           <div className='bg-[linear-gradient(180deg,#FAFAFA_0%,#FFFFFF_100%)] h-[100px] p-[2px] flex justify-center items-center  rounded-lg shadow-featurebox w-[277px]'>
