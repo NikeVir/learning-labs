@@ -39,7 +39,7 @@ export default function OurSolution() {
                 <h1 className='text-center text-[#001631]  font-bold sm:text-[42px] text-[38px]'>Our Solutions</h1>
             </div>
 
-            <div className='w-[80%] grid grid-flow-col grid-cols-4 gap-8'>
+            <div className=' w-[85%] sm:w-[95%] lg:w-[80%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-4'>
                 {
                     data.map((item, index) => (
                         <div key={index} style={{background:item.containerCol}} className={`max-[300px] flex flex-col   `}>

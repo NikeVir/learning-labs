@@ -14,7 +14,7 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className='w-[90%] lg:w-[80%]  relative xl:min-h-[383px] max-sm:my-4 bg-[#000C19] items-center justify-center'>
+                <div className='sm:w-[90%] lg:w-[80%]  relative xl:min-h-[383px] max-sm:my-4 bg-[#000C19] items-center justify-center'>
                     {/* <img src="/images/footer/footer2.png" className='rounded-3xl bg-[#000C19] min-h-[220px] absolute max-md:bottom-0' alt="Logo" /> */}
                     <div className='relative'>
                         <FooterLinks />
