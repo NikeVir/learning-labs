@@ -31,7 +31,7 @@ function page() {
     // 345.39deg,#FFFFFF_9.63%,#FFFCF1_51.2%)
     <div >
       {/* <Header /> */}
-      <div className='bg-[linear-gradient(345.39deg,#FFFFFF_9.63%,#F1FFF6_51.2%)]'>
+      <div className=''>
 
         <Header />
         {/* <div className='flex gap-9 items-center justify-center py-10'>

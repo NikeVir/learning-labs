@@ -215,7 +215,7 @@ export default function Blog({ filter }: { filter: string | null }) {
 
         </div>
         {/* Display Cards */}
-        <div className="w-[75%] flex flex-wrap justify-around gap-5">
+        <div className="md:w-[75%] w-full flex flex-wrap items-center  justify-around gap-5">
           {displayCards}
         </div>
       </div>
