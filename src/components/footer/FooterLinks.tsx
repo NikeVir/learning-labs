@@ -69,12 +69,12 @@ export default function FooterLinks() {
         <div className="max-md:flex max-md:flex-col-reverse max-md:gap-20 lg:grid sm:grid-cols-3 lg:gap-8">
           <div className="  flex flex-col items-center justify-center  text-center lg:text-left">
             <div className="flex items-center -gap-10">
-              <img src="/images/footer/footerlogo.svg" className="w-[70px] h-[70px]" alt="Logo" />
-              <img src="/images/logos/logowhite.svg" className=" relative -left-16" alt="Logo" />
+              {/* <img src="/images/footer/footerlogo.svg" className="w-[70px] h-[70px]" alt="Logo" /> */}
+              <img src="/images/whitelogo.svg" className=" relative " alt="Logo" />
 
             </div>
 
-            <div className="flex justify-center items-center  space-x-1 lg:justify-start">
+            <div className="flex justify-center items-center mt-2  space-x-1 lg:justify-start">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}

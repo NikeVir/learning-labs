@@ -43,7 +43,27 @@ const cardData:CardData[] = [
 },
 ]
 
+function SampleNextArrow(props:any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+    className={"absolute right-0 top-[50%] h-full bg-opacity-25 z-20  bg-gradient-to-r from-transparent to-gray-300 cursor-pointer transform -translate-y-1/2"}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    ><img src="images/rightarrow.png"  className="w-full relative top-[40%] h-[50px] sm:h-[100px] " alt="left arrow"/></div>
+  );
+}
 
+function SamplePrevArrow(props:any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+    className={"absolute z-20 left-0 cursor-pointer h-full  bg-gradient-to-r from-gray-400 to-transparent  top-[50%] bg-opacity-25  transform -translate-y-1/2"}
+      style={{ ...style, display: "block", }}
+      onClick={onClick}
+    ><img src="images/leftarrow.png"  className="w-full h-[50px] sm:h-[100px]  relative top-[40%]  " alt="left arrow"/></div>
+  );
+}
 
 function SliderCard() {
 
@@ -53,7 +73,8 @@ function SliderCard() {
     speed: 500,
     centerMode: true,
     centerPadding: "15%",
-    
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1440,
@@ -62,16 +83,18 @@ function SliderCard() {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-          centerMode: false,
-          centerPadding: "0%",
+          // centerMode: true,
+
+          // centerPadding: "25%",
         }
       },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
+          centerMode: false,
           dots: true,
           centerPadding: "24%",
         }
@@ -82,7 +105,6 @@ function SliderCard() {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
-          centerPadding: "20%",
           dots: true,
 
         }
@@ -92,7 +114,7 @@ function SliderCard() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerPadding: "5%",
+          centerMode: false,
           dots: true,
 
         }
@@ -100,7 +122,7 @@ function SliderCard() {
     ]
   };
   return (
-    <div className="slider-container h-[70vh] md:min-h-[40vh] overflow-x-hidden overflow-y-visible ">
+    <div className="slider-container relative lg:h-[70vh]   border-black  md:min-h-[40vh] overflow-x-hidden overflow-y-visible ">
       <Slider {...settings}>
         
         {cardData.map((data, index) => (
