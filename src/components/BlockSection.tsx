@@ -80,7 +80,7 @@ export default function Blog({ filter }: { filter: string | null }) {
   const currentCards = filteredCards.slice(indexOfFirstItem, indexOfLastItem);
 
   const displayCards = currentCards.map((card, index) => (
-    <div key={index} onClick={() => window.open(`/Blog/${card.heading.replace(/\s+/g, '-')}`)} className=" bg-white shadow-sm rounded-lg w-[90%] hover:bg-[#f9f7f7]  sm:w-[358px] cursor-pointer">
+    <div key={index} onClick={() => window.open(`/Blog/${card.heading.replace(/\s+/g, '-')}`)} className=" bg-white border shadow-sm rounded-lg w-[90%] hover:bg-[#f9f7f7]  sm:w-[358px] cursor-pointer">
       <div className="p-4">
         <div className="rounded-lg  overflow-hidden ">
           <Image src={card["blog-img"]} alt="Blog Image" className="bg-contain" width={396} height={176} />
@@ -106,7 +106,7 @@ export default function Blog({ filter }: { filter: string | null }) {
   };
 
   return (
-    <section className=" overflow-hidden flex flex-col items-center  bg-[#f1fff6] mb-10 ">
+    <section className=" overflow-hidden flex flex-col items-center  mb-10 ">
       <section className='relative overflow-hidden '>
         <img src='/images/bann3.jpg' alt='about' className='w-full blur-[2px]  h-[80vh] absolute' />
         <div className='absolute  bg-[black] opacity-50 w-[100%] h-[70vh] '></div>
@@ -125,10 +125,10 @@ export default function Blog({ filter }: { filter: string | null }) {
           </div>
         </div>
       </section>
-      <div className="lg:w-[80%] w-[95%] mt-10 overflow-hidden flex max-md:flex-col justify-center">
+      <div className="lg:w-[80%] w-[95%]  mt-10 overflow-hidden flex max-md:flex-col justify-center">
         <div className="flex flex-col gap-16">
           {/* Industry Filters */}
-          <div className="bg-white rounded-xl py-[15px] px-[22px] flex flex-col gap-4 border border-[#F3F3F3]">
+          <div className="bg-white shadow-sm border rounded-xl py-[15px] px-[22px] flex flex-col gap-4 ">
             <div className=" flex flex-col gap-4 ">
               <h4 className="font-bold text-base">Industry</h4>
               <div className="flex flex-wrap gap-3 max-md:w-full w-[330px]">

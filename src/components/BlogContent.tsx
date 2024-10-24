@@ -47,7 +47,7 @@ const blogs = [
 export default function BlogContent({ title }: { title: string }) {
   const blog = blogs.find(blog => blog.heading === title);
   return (
-    <div className='mt-5 mb-20 md:w-4/5 mx-auto '>
+    <div className='mt-5 mb-20 w-[70%] mx-auto '>
       {blog ? (
         <div>
           <div className='flex flex-col gap-5 mt-4'>

@@ -7,7 +7,7 @@ import Footer from '@/components/footer/Footer';
 
 export default function Page() {
   return (
-    <main className="bg-[#f1fff6]">
+    <main >
       <Header />
       <div className="">
         <Suspense fallback={<div>Loading...</div>}>
