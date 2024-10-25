@@ -24,13 +24,13 @@ const cardData:CardData[] = [
         company: ' Tata Institute of Social Sciences',
         details:"Dr. Sunil Budhiraja is a well know authority in conducting psychometric tests, building learning organizations, driving organization change, and enhancing employee performance in large global enterprises. His 18 years of rich consulting and research experience has culminated in over 50 management development programs across India."
     },
-    {
-        image: '/images/advisory/adv3.png',
-        name: 'Dhriti Shetty',
-        position: 'Organization Psychologist',
-        company: 'Learning & Development',
-          details:"Ms. Dhriti Shetty holds a masters degree in Organization Psychology and Psychiatry. She is an certified expert in Thematic Apperception testing."
-    },
+    // {
+    //     image: '/images/advisory/adv3.png',
+    //     name: 'Dhriti Shetty',
+    //     position: 'Organization Psychologist',
+    //     company: 'Learning & Development',
+    //       details:"Ms. Dhriti Shetty holds a masters degree in Organization Psychology and Psychiatry. She is an certified expert in Thematic Apperception testing."
+    // },
 ]
 
 
@@ -41,15 +41,15 @@ function Advisory() {
         <p className='text-center font-bold text-[42px]'>
         Our Advisors
             </p></div>
-        {/* <div className='flex  max-md:flex-wrap justify-center gap-6'>
+        <div className='flex  max-md:flex-wrap justify-center gap-16'>
             {cardData.map((data, index) => (
                 <AdvisoryCards key={index} data={data} />
             ))}
-        </div> */}
-        <div className=' w-full'>
+        </div>
+        {/* <div className=' w-full'>
 
             <SliderCard />
-        </div>
+        </div> */}
     </div>
   )
 }

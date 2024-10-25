@@ -27,20 +27,20 @@ const cardData:CardData[] = [
       company: ' Tata Institute of Social Sciences',
       details:"Dr. Sunil Budhiraja is a well know authority in conducting psychometric tests, building learning organizations, driving organization change, and enhancing employee performance in large global enterprises. His 18 years of rich consulting and research experience has culminated in over 50 management development programs across India."
   },
-  {
-      image: '/images/advisory/adv3.png',
-      name: 'Dhriti Shetty',
-      position: 'Organization Psychologist',
-      company: 'Learning & Development',
-        details:"Ms. Dhriti Shetty holds a masters degree in Organization Psychology and Psychiatry. She is an certified expert in Thematic Apperception testing."
-  },
-  {
-    image: '/images/advisory/adv3.png',
-    name: 'Dhriti Shetty',
-    position: 'Organization Psychologist',
-    company: 'Learning & Development',
-      details:"Ms. Dhriti Shetty holds a masters degree in Organization Psychology and Psychiatry. She is an certified expert in Thematic Apperception testing."
-},
+//   {
+//       image: '/images/advisory/adv3.png',
+//       name: 'Dhriti Shetty',
+//       position: 'Organization Psychologist',
+//       company: 'Learning & Development',
+//         details:"Ms. Dhriti Shetty holds a masters degree in Organization Psychology and Psychiatry. She is an certified expert in Thematic Apperception testing."
+//   },
+//   {
+//     image: '/images/advisory/adv3.png',
+//     name: 'Dhriti Shetty',
+//     position: 'Organization Psychologist',
+//     company: 'Learning & Development',
+//       details:"Ms. Dhriti Shetty holds a masters degree in Organization Psychology and Psychiatry. She is an certified expert in Thematic Apperception testing."
+// },
 ]
 
 function SampleNextArrow(props:any) {
@@ -122,16 +122,16 @@ function SliderCard() {
     ]
   };
   return (
-    <div className="slider-container max-sm:min-h-[60vh] relative lg:h-[70vh]   border-black  md:min-h-[40vh] overflow-x-hidden overflow-y-visible ">
-      <Slider {...settings}>
+    <div className=" max-sm:min-h-[60vh] relative lg:h-[70vh]   border-black  md:min-h-[40vh] overflow-x-hidden overflow-y-visible ">
+      {/* <Slider {...settings}> */}
         
         {cardData.map((data, index) => (
-          <div className=" flex justify-center  overflow-hidden items-center px-4 mx-4 ">
+          <div className=" flex flex-row justify-center   overflow-hidden items-center px-4 mx-4 ">
 
           <AdvisoryCards key={index} data={data} />
           </div>
         ))}
-      </Slider>
+      {/* </Slider> */}
     </div>
   );
 }

@@ -57,7 +57,7 @@ function page() {
           <img src='/images/bann2.jpg' alt='about' className='w-full blur-[2px]  h-[80vh] absolute' />
           <div className='absolute  bg-[black] opacity-70 w-[100%] h-[70vh] '></div>
 
-          <div className='relative flex flex-col h-[70vh] items-center justify-center' >
+          <div className='relative flex flex-col h-[60vh] sm:h-[70vh] items-center justify-center' >
 
             <div className='w-[75%] '>
               <p className='text-white text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold '>
@@ -66,17 +66,18 @@ function page() {
               <p className='text-right mt-5 text-white md:text-xl lg:text-2xl font-medium '>
                 - Satya Nadella
               </p>
-              <p className='text-right text-2xl text-white lg:text-2xl mb-5  font-medium ' > CEO, Microsoft</p>
-              <p className=' text-[#e9bd16] md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
+              <p className='text-right text-white  md:text-xl lg:text-2xl  mb-5  font-medium ' > CEO, Microsoft</p>
+              <p className=' text-[#e9bd16] text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
                 Evolution & Reinvention is the key to success for all sizes & types of organizations. We provide tools to facilitate it inside out.
 
               </p>
             </div>
           </div>
         </section>
-        <section className='flex  justify-center items-center' >
-          <div className='flex max-md:flex-wrap gap-5 w-[90%] lg:w-[70%] border-2 border-[#194d92] p-5 rounded-xl my-10  '>
-            <div className='md:basis-1/2 '>
+        {/* <section className='flex  justify-center items-center bg-[#fefefe]'  >
+          <div className='flex max-md:flex-wrap gap-10 w-[90%] lg:w-[70%]  p-5 rounded-xl my-10  '>
+            <div className='md:basis-1/2 flex items-center relative '>
+            <img src='/images/communities/background.svg' className='absolute left-[5%] top-[20%]' alt='community' />
               <p className='text-[#194d92]  text-justify text-xl md:text-2xl font-bold'>The Organization Learning Labs is an unique Organization Development Laboratory
                 where we conduct organization research on a continuous basis in collaboration with
                 research focused institutions, thought leaders and leading organizations.
@@ -85,7 +86,7 @@ function page() {
                 We build & offer expert content and tools based on the research conclusions.
                 <br/>
                 <br/>
-                Administration of these tools 7 expert facilitation by OLL community members
+                Administration of these tools & expert facilitation by OLL community members
                 cultivate organization-wide learning and facilitate strategic interventions, empowering
                 organizations to evolve and innovate. This drives unparalleled growth, efficiency, and
                 innovation within the organizations.</p>
@@ -102,7 +103,7 @@ function page() {
 
             </div>
           </div>
-        </section>
+        </section> */}
         <section className='flex justify-center mt-10'>
           <div className='lg:w-[80%] w-[95%]'>
             <div className='flex flex-col items-center  justify-center'>
@@ -111,7 +112,7 @@ function page() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor pellentesque <span className='text-[#4AB371] font-medium'> et nibh tincidunt bibendum.</span>
               </div>
             </div> */}
-              <div className='flex gap-2 mt-4'>
+              {/* <div className='flex gap-2 mt-4'>
                 <div>
                   <img src='/images/About/main1.png' alt='about' className='w-[564px] max-h-[561px]' />
                 </div>
@@ -120,14 +121,29 @@ function page() {
                   <img src='/images/About/main3.png' alt='about' className='w-[564px] max-h-[274px]' />
                 </div>
 
-              </div>
+              </div> */}
             </div>
-            <div className='border-2 border-[#FEBF00] bg-white flex flex-col gap-6 rounded-3xl py-[40px] px-[59px]'>
-              <h1 className='text-[#0E0637] font-bold text-[2.6rem] leading-[50px]'>Our Story</h1>
-              <p className='max-w-[882px] font-medium text-lg text-[#100D22]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor pellentesque et nibh tincidunt bibendum. Sed in tellus in feugiat dui et enim. Odio feugiat id donec ultricies. Nisi, sed sed pellentesque posuere orci sit sed. Gravida facilisis sollicitudin donec vitae quam ut nibh enim. </p>
-              <p className='max-w-[882px] font-medium text-lg text-[#100D22]'>
+            <div className='border-2 border-[#FEBF00] bg-white flex flex-col gap-6 rounded-3xl py-[40px] px-10 sm:px-[59px]'>
+              <h1 className='text-[#0E0637] font-bold text-[2.6rem] leading-[50px]'>About OLL</h1>
+              {/* <p className='max-w-[882px] font-medium text-lg text-[#100D22]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor pellentesque et nibh tincidunt bibendum. Sed in tellus in feugiat dui et enim. Odio feugiat id donec ultricies. Nisi, sed sed pellentesque posuere orci sit sed. Gravida facilisis sollicitudin donec vitae quam ut nibh enim. </p> */}
+              <div className='relative'>
+                <img src='/images/communities/background.svg' className='absolute sm:left-[30%] -top-[10%]' alt='community' />
+                <p className='text-[#194d92]  text-justify text-xl md:text-2xl font-bold'>The Organization Learning Labs is an unique Organization Development Laboratory
+                  where we conduct organization research on a continuous basis in collaboration with
+                  research focused institutions, thought leaders and leading organizations.
+                  <br />
+                  <br />
+                  We build & offer expert content and tools based on the research conclusions.
+                  <br />
+                  <br />
+                  Administration of these tools & expert facilitation by OLL community members
+                  cultivate organization-wide learning and facilitate strategic interventions, empowering
+                  organizations to evolve and innovate. This drives unparalleled growth, efficiency, and
+                  innovation within the organizations.</p>
+              </div>
+              {/* <p className='max-w-[882px] font-medium text-lg text-[#100D22]'>
                 Enim semper nulla quis est. Est scelerisque malesuada maecenas augue elementum integer. Sollicitudin augue in libero eu neque augue diam lectus laoreet. Viverra amet, in massa integer tincidunt ullamcorper. Accumsan massa consequat amet cursus condimentum consectetur. Enim sem cursus viverra at imperdiet.
-              </p>
+              </p> */}
               <div>
                 <Button variant={'primary'}>Join Community</Button>
               </div>
@@ -138,7 +154,7 @@ function page() {
       <section className='flex justify-center my-20'>
         <div className='w-[926px] '>
           <div className='text-center'>
-            <p className='text-[#FE363A] font-bold text-2xl'>We Partnered with the best</p>
+            <p className='text-[#FE363A] font-bold text-2xl'>We collaborate with the best</p>
           </div>
           <div className='flex mt-7 flex-wrap gap-6 justify-center'>
             <div className='bg-[linear-gradient(180deg,#FAFAFA_0%,#FFFFFF_100%)] flex justify-center items-center py-[9.33px] px-[11.88px] max-h-[66px] h-[66px] rounded-md shadow-logobox w-[189px]'>
@@ -148,7 +164,7 @@ function page() {
               <img src='/images/logos/maskg (2).svg' alt='partner' />
             </div>
             <div className='bg-[linear-gradient(180deg,#FAFAFA_0%,#FFFFFF_100%)] flex justify-center items-center py-[9.33px] px-[11.88px] rounded-md h-[66px] shadow-logobox w-[189px]'>
-              <img src='/images/logos/maskg (3).svg' alt='partner' />
+              <img src='/images/logos/icici.png' className='w-[60px] h-[50px]' alt='partner' />
             </div>
             <div className='bg-[linear-gradient(180deg,#FAFAFA_0%,#FFFFFF_100%)] flex justify-center items-center py-[9.33px] px-[11.88px] rounded-md h-[66px] shadow-logobox w-[189px]'>
               <img src='/images/logos/maskg (4).svg' alt='partner' />
@@ -168,7 +184,7 @@ function page() {
         </div>
       </section>
       {/* <Teams /> */}
-      <section className='flex justify-center my-20'>
+      {/* <section className='flex justify-center my-20'>
         <div className='lg:w-[80%] w-[95%] flex max-lg:flex-wrap item-center justify-center gap-5'>
           <div className='bg-[linear-gradient(180deg,#FAFAFA_0%,#FFFFFF_100%)] h-[100px] p-[2px] flex justify-center items-center  rounded-lg shadow-featurebox w-[277px]'>
             <div className=' flex items-center justify-center w-full h-full hover:bg-[#FEBF00] rounded-lg'>
@@ -241,11 +257,11 @@ function page() {
 
 
         </div>
-      </section>
+      </section> */}
       {/* <Partners /> */}
-      <div className='bg-[#001631]'>
+      <div className='bg-[#040509]'>
 
-      <Partners2/>
+        <Partners2 />
       </div>
       <Advisory />
       <Footer />

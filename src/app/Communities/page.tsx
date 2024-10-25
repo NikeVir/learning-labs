@@ -10,13 +10,13 @@ import React from 'react'
 
 function page() {
   return (
-    <div className='bg-[#f1fff6]'>
+    <div >
       <Header />
       <section className='relative overflow-hidden '>
-        <img src='/images/bann1.jpg' alt='about' className='w-full blur-[2px]  h-[70vh] absolute' />
-        <div className='absolute  bg-[black] opacity-50 w-[100%] h-[70vh] '></div>
+        <img src='/images/bann1.jpg' alt='about' className='w-full blur-[2px]  h-[60vh] sm:h-[75vh] absolute' />
+        <div className='absolute  bg-[black] opacity-50 w-[100%] h-[60vh] sm:h-[75vh] '></div>
 
-        <div className='relative flex flex-col h-[70vh] items-center justify-center' >
+        <div className='relative flex flex-col h-[60vh] sm:h-[75vh] items-center justify-center' >
 
           <div className='w-[75%] '>
             <p className='text-white text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold  '>
@@ -24,8 +24,8 @@ function page() {
 
             </p>
 
-            <p className=' text-[#ffc000]  md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
-              We We support our community members with our professional tools and indepth knowhow, to augument their exceptional facilitation capabilities to unleash unparalleled growth & prosperity in client organizations.
+            <p className=' text-[#ffc000]  text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
+              We support our community members with our professional tools and indepth knowhow, to augument their exceptional facilitation capabilities to unleash unparalleled growth & prosperity in client organizations.
 
             </p>
           </div>
@@ -124,7 +124,7 @@ function page() {
 
               </div>
             </div> */}
-            <div className=' items-center justify-center '>
+            {/* <div className=' items-center justify-center '>
 
               <div className='text-center mt-10'>
                 <div className='text-3xl sm:text-[2.6rem] sm:leading-[50px] font-bold '>
@@ -174,7 +174,7 @@ function page() {
                 </div>
 
               </div>
-            </div>
+            </div> */}
             {/* <div className='flex justify-center'>
 
 
@@ -233,7 +233,7 @@ function page() {
         </div>
 
       </div>
-      <div className='flex justify-center relative py-10 min-h-screen overflow-hidden'>
+      {/* <div className='flex justify-center relative py-10 min-h-screen overflow-hidden'>
               <img src='/images/knowledge/frame.png' className='absolute  min-h-full w-full' alt='partner' />
               <div className='lg:w-[80%] w-[95%] flex max-md:flex-col gap-16 relative pt-24'>
                 <div className='md:w-[528px] pt-6 max-md:text-center'>
@@ -242,7 +242,7 @@ function page() {
                 </div>
                 <Objectives />
               </div>
-            </div>
+            </div> */}
 
       <Footer />
 

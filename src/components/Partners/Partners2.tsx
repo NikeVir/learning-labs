@@ -12,8 +12,8 @@ function Partners2() {
             {/* <div className='text-[#E0E0E0] text-base'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div> */}
           </div>
         </div>
-        <div className='flex justify-center max-lg:flex-wrap mt-[50px] gap-10'>
-          <div className='bg-[rgba(250,250,250,0.08)] rounded-[20px] w-[400px] h-[405px] border border-[#E6E6E6] flex justify-center items-center hover:border-[#FF3438] hover:border-[3px] hover:bg-[#00142d]'>
+        <div className='flex justify-center max-lg:flex-wrap mt-[50px] gap-16'>
+          <div className='bg-[rgba(250,250,250,0.08)] rounded-[20px] w-[400px] h-[405px] border border-[#E6E6E6] flex justify-center items-center hover:border-[#FF3438] hover:border-[3px] hover:bg-[#040509]'>
             <div className=' text-white h-[274px] text-center flex flex-col items-center justify-center gap-2'>
               <img src='/images/mem1.jpg' className='min-w-[201px] max-w-[201px] max-h-[201px] min-h-[201px] rounded-[100%]' alt='' />
               <div className='text-2xl font-medium' > Parikshit Roy Chowdhury
@@ -26,7 +26,7 @@ function Partners2() {
               </a>
             </div>
           </div>
-          <div className='bg-[rgba(250,250,250,0.08)] rounded-[20px] w-[400px] h-[405px] border border-[#E6E6E6] flex justify-center items-center hover:border-[#FF3438] hover:border-[3px] hover:bg-[#00142d]'>
+          <div className='bg-[rgba(250,250,250,0.08)] rounded-[20px] w-[400px] h-[405px] border border-[#E6E6E6] flex justify-center items-center hover:border-[#FF3438] hover:border-[3px] hover:bg-[#040509]'>
             <div className=' text-white h-[274px] text-center flex flex-col items-center justify-center gap-2'>
               <img src='/images/mem2.jpg' className='min-w-[201px] max-w-[201px] max-h-[201px] min-h-[201px] rounded-[100%]' alt='' />
               <div className='text-2xl font-medium' >Shafeeq Ahmed

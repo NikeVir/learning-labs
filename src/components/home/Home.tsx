@@ -122,14 +122,10 @@ function Home() {
       <Header />
       <Main />
       <div id="sticked" className='z-50 bg-white'>
-
-
       <div id="table-of-contents" className=' bg-white z-50  '>
         <Overview />
         <OurSolution />
       </div>
-
-
         <Features />
       </div>
 
