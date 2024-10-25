@@ -28,7 +28,7 @@ export default function FooterLinks() {
       { name: "Information Technology", href: "/industries/Retail" },
     ],
     resources: [
-      { name: "Benefits", href: "/Blog" },
+      { name: "Benefits", href: "/research-synopsis" },
       { name: " OLL community portal", href: "/Communities" },
       { name: "FAQ", href: "/refund-policy" },
     ],
@@ -98,7 +98,7 @@ export default function FooterLinks() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm capitalize  leading-5 text-[#F4F4F4] hover:text-gray-900"
+                        className="text-sm capitalize  leading-5 text-[#F4F4F4] hover:text-gray-300"
                       >
                         {item.name}
                       </a>
@@ -115,7 +115,7 @@ export default function FooterLinks() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm capitalize leading-5 text-[#F4F4F4] hover:text-gray-900"
+                        className="text-sm capitalize leading-5 text-[#F4F4F4] hover:text-gray-300"
                       >
                         {item.name}
                       </a>
@@ -134,7 +134,7 @@ export default function FooterLinks() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm capitalize leading-5 text-[#F4F4F4] hover:text-gray-900"
+                        className="text-sm capitalize leading-5 text-[#F4F4F4] hover:text-gray-300"
                       >
                         {item.name}
                       </a>
@@ -151,7 +151,7 @@ export default function FooterLinks() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm capitalize leading-5 text-[#F4F4F4] hover:text-gray-900"
+                        className="text-sm capitalize leading-5 text-[#F4F4F4] hover:text-gray-300"
                       >
                         {item.name}
                       </a>

@@ -250,7 +250,7 @@ const Header: React.FC = () => {
                                 <a href="/Communities" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
                                     OLL Communities
                                 </a>
-                                <a href="/Blog" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
+                                <a href="/research-synopsis" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
                                     Research Synopsis
 
                                 </a>
