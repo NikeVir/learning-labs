@@ -84,13 +84,14 @@ export default function Blog({ filter }: { filter: string | null }) {
         <div className="rounded-lg  overflow-hidden ">
           <Image src={card["blog-img"]} alt="Blog Image" className="bg-contain" width={396} height={176} />
         </div>
-        <div className="rounded-md  space-y-1 mt-3 ml-4 text-xl font-medium">
-          <p style={{ color: `${card.color}` }}>{card.title}</p>
-        </div>
+        
       </div>
       <div className="p-4 basis-2/3">
       
         <div className="rounded-md  space-y-1 ">
+        <div className="rounded-md  text-xl font-medium">
+          <p style={{ color: `${card.color}` }}>{card.title}</p>
+        </div>
           <h1 className="text-center sm:text-left  font-bold text-xl">{card.heading}</h1>
           <p className=" sm:text-left text-base text-[#000000] text-justify">{card.text.substring(0, 191) + "..."} <span className="text-[#004c92] font-bold">Read More</span></p>
         </div>
@@ -105,21 +106,21 @@ export default function Blog({ filter }: { filter: string | null }) {
         <div className='absolute  bg-[black] opacity-50 w-[100%] h-[70vh] '></div>
         <div className='relative flex flex-col h-[70vh] items-center justify-center' >
           <div className='w-[75%] '>
-            <p className='text-white text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold '>
+            <p className='text-white text-xl sm:text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold '>
               “Research is seeing what everybody else has seen and thinking what nobody else has thought”
             </p>
             <p className='text-right mt-5 text-white md:text-xl lg:text-2xl font-medium '>
               - Albert Szent-Györgyi,
             </p>
-            <p className='text-right text-2xl text-white lg:text-2xl mb-5  font-medium ' >  Nobel Prize winner</p>
-            <p className=' text-[#e9bd16] md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
+            <p className='text-right  text-white lg:text-2xl mb-5  font-medium ' >  Nobel Prize winner</p>
+            <p className=' text-[#e9bd16] text-xl sm:text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
               "A synopsis of the research inhouse as well as from our learned community is provided here."
             </p>
           </div>
         </div>
       </section>
       <div className=" flex max-md:flex-col w-full gap-5">
-        <div className="flex flex-col gap-16 max-md:w-[300px]  max-lg:max-w-[380px]  bg-[#f4f4f4]">
+        <div className="flex flex-col items-center gap-16   max-lg:max-w-[380px]  bg-[#f4f4f4]">
           {/* Industry Filters */}
           <div className="  py-[15px] px-4 lg:px-[22px] flex flex-col gap-4 ">
             <div className=" flex flex-col gap-4 ">

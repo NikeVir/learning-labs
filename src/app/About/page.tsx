@@ -1,3 +1,4 @@
+'use client'
 import Advisory from '@/components/Advisory/Advisory'
 import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
@@ -60,14 +61,14 @@ function page() {
           <div className='relative flex flex-col h-[70vh] items-center justify-center' >
 
             <div className='w-[75%] '>
-              <p className='text-white text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold '>
+              <p className='text-white text-xl sm:text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold '>
                 "Longevity of this business is about being able to reinvent yourself or invent the future"
               </p>
               <p className='text-right mt-5 text-white md:text-xl lg:text-2xl font-medium '>
                 - Satya Nadella
               </p>
               <p className='text-right text-white  md:text-xl lg:text-2xl  mb-5  font-medium ' > CEO, Microsoft</p>
-              <p className=' text-[#e9bd16] text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
+              <p className=' text-[#e9bd16] text-xl sm:text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
                 Evolution & Reinvention is the key to success for all sizes & types of organizations. We provide tools to facilitate it inside out.
 
               </p>
@@ -145,7 +146,7 @@ function page() {
                 Enim semper nulla quis est. Est scelerisque malesuada maecenas augue elementum integer. Sollicitudin augue in libero eu neque augue diam lectus laoreet. Viverra amet, in massa integer tincidunt ullamcorper. Accumsan massa consequat amet cursus condimentum consectetur. Enim sem cursus viverra at imperdiet.
               </p> */}
               <div>
-                <Button variant={'primary'}>Join Community</Button>
+                <Button onClick={()=>window.open("/Communities", "_self")} variant={'primary'}>Join Community</Button>
               </div>
             </div>
           </div>
@@ -259,7 +260,7 @@ function page() {
         </div>
       </section> */}
       {/* <Partners /> */}
-      <div className='bg-[#040509]'>
+      <div className='bg-[#001631]'>
 
         <Partners2 />
       </div>

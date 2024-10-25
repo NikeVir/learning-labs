@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Button } from '../ui/Button'
 const logos = [
@@ -11,7 +12,7 @@ const logos = [
 function Main() {
     return (
         <>
-            <div className='relative overflow-hidden min-h-[50vh] sm:min-h-[80vh] min-w-full flex justify-center items-center '>
+            <div className='relative overflow-hidden min-h-[70vh] sm:min-h-[80vh] min-w-full flex justify-center items-center '>
                 <div className='absolute w-full min-h-[80vh]  blur-[13.25px]  '>
                     <img src="/images/homemain.jpg" className=' relative  bg-[rgba(0,0,0,0.48)] min-h-screen min-w-full ' alt="" />
                     {/* <div  className='absolute bg-[rgba(0,0,0,0.48)] min-h-screen min-w-full ' ></div> */}
@@ -34,7 +35,7 @@ function Main() {
                                 <p className='text-center text-[#ECF5FF] md:text-xl lg:w-[814px] max-sm:px-5 max-sm:text-justify'>Indepth research insights transformed into powerful organization development tools & simulations, to empower business practioners to implement strategic interventions that drive growth & innovation</p>
                             </div>
                             <div className='flex gap-[20px] justify-center'>
-                                <Button variant={'primary'} className='bg-[#00b84d] text-[#ffffff]'>Join Community</Button>
+                                <Button onClick={()=>window.open("/Communities", "_self")} variant={'primary'} className='bg-[#00b84d] text-[#ffffff]'>Join Community</Button>
                                 <Button variant={'outline'} className='border-[#ffffff] text-[#ffffff] '>Let’s Collaborate</Button>
                             </div>
                         </div>

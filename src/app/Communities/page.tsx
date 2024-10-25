@@ -13,18 +13,18 @@ function page() {
     <div >
       <Header />
       <section className='relative overflow-hidden '>
-        <img src='/images/bann1.jpg' alt='about' className='w-full blur-[2px]  h-[60vh] sm:h-[75vh] absolute' />
-        <div className='absolute  bg-[black] opacity-50 w-[100%] h-[60vh] sm:h-[75vh] '></div>
+        <img src='/images/bann1.jpg' alt='about' className='w-full blur-[2px]  h-[75vh] sm:h-[75vh] absolute' />
+        <div className='absolute  bg-[black] opacity-50 w-[100%] h-[75vh] sm:h-[75vh] '></div>
 
-        <div className='relative flex flex-col h-[60vh] sm:h-[75vh] items-center justify-center' >
+        <div className='relative flex flex-col  h-[75vh] items-center justify-center' >
 
           <div className='w-[75%] '>
-            <p className='text-white text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold  '>
+            <p className='text-white text-xl sm:text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold  '>
               "The best collaborations create something bigger than the sum of what each person can create on their own "
 
             </p>
 
-            <p className=' text-[#ffc000]  text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
+            <p className=' text-[#ffc000]  text-xl sm:text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold mt-10'>
               We support our community members with our professional tools and indepth knowhow, to augument their exceptional facilitation capabilities to unleash unparalleled growth & prosperity in client organizations.
 
             </p>

@@ -65,7 +65,7 @@ export default function CommunityFaq({ colortheme }: { colortheme: string }) {
                                 <div className={`relative flex my-2
                                 bg-[#F2F2F2]
                 
-                 rounded-[10px] border-2 px-12 py-8 ${openFaqs.includes(index) ? 'border-[2px] border-[#ffbf23] shadow-faqbox' : 'border-gray-400'}`}>
+                 rounded-[10px] border-2 px-12 py-8 ${openFaqs.includes(index) ? 'border-[2px] border-[#ffbf23] shadow-faqbox' : 'border-gray-200'}`}>
                                     <div>
                                         <h2 className={`font-medium text-[20px] text-black`}>
                                             {faq.question}

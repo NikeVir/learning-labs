@@ -60,8 +60,8 @@ function Overview() {
             </div> */}
             <div className='w-full   flex justify-center '>
 
-                <div className='w-full px-5  py-[2%]'>
-                    <iframe  className='min-h-[50vh] lg:min-h-[80vh] min-w-[100%]' src={sections[activeIndex].link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
+                <div className='w-full px-2 sm:px-5  py-[2%] '>
+                    <iframe  className='min-h-[50vh] border-white border lg:min-h-[80vh] min-w-[100%]' src={sections[activeIndex].link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
 
                 </div>
 
