@@ -57,7 +57,7 @@ function page() {
           <img src='/images/bann2.jpg' alt='about' className='w-full blur-[2px]  h-[80vh] absolute' />
           <div className='absolute  bg-[black] opacity-70 w-[100%] h-[70vh] '></div>
 
-          <div className='relative flex flex-col h-[60vh] sm:h-[70vh] items-center justify-center' >
+          <div className='relative flex flex-col h-[70vh] items-center justify-center' >
 
             <div className='w-[75%] '>
               <p className='text-white text-2xl md:text-3xl xl:text-5xl xl:leading-[55px] font-bold '>
@@ -123,12 +123,12 @@ function page() {
 
               </div> */}
             </div>
-            <div className='border-2 border-[#FEBF00] bg-white flex flex-col gap-6 rounded-3xl py-[40px] px-10 sm:px-[59px]'>
+            <div className='border-2 border-[#FEBF00] bg-white flex flex-col gap-6 rounded-3xl py-[40px] px-5 sm:px-[59px]'>
               <h1 className='text-[#0E0637] font-bold text-[2.6rem] leading-[50px]'>About OLL</h1>
               {/* <p className='max-w-[882px] font-medium text-lg text-[#100D22]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor pellentesque et nibh tincidunt bibendum. Sed in tellus in feugiat dui et enim. Odio feugiat id donec ultricies. Nisi, sed sed pellentesque posuere orci sit sed. Gravida facilisis sollicitudin donec vitae quam ut nibh enim. </p> */}
               <div className='relative'>
                 <img src='/images/communities/background.svg' className='absolute sm:left-[30%] -top-[10%]' alt='community' />
-                <p className='text-[#194d92]  text-justify text-xl md:text-2xl font-bold'>The Organization Learning Labs is an unique Organization Development Laboratory
+                <p className='text-[#194d92]  text-justify text-sm md:text-2xl font-bold'>The Organization Learning Labs is an unique Organization Development Laboratory
                   where we conduct organization research on a continuous basis in collaboration with
                   research focused institutions, thought leaders and leading organizations.
                   <br />
