@@ -124,7 +124,7 @@ function Home() {
       <div id="sticked" className='z-50 bg-white'>
         <div id="table-of-contents" className=' bg-white z-50  '>
           <Overview />
-          <OurSolution />
+          {/* <OurSolution /> */}
         </div>
         <Features />
       </div>
