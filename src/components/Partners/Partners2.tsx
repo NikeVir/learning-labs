@@ -22,7 +22,7 @@ function Partners2() {
             {/* Hidden Description on hover */}
             <div className='absolute top-0 left-0 w-full h-full flex-col rounded-[20px] gap-2 bg-black bg-opacity-80 text-white p-4 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300'>
               <p>Parikshit has spreadheaded large global business operations for 2 decades in India, China, Asia Pacific, Europe & Latin America. He has been a founding member of a few startups in India and participates as a board member in varied companies.</p>
-              <a href='https://www.linkedin.com/in/shafeeq-ahmed-9a5030b9' target='_blank' className='flex justify-center'>
+              <a href='https://www.linkedin.com/in/parikshit-roy-chowdhury-86a7b4165' target='_blank' className='flex justify-center'>
                 <img src='/images/logos/linkedin.svg' className='w-[31.5px] h-[31.5px]' alt='' />
               </a>
             </div>
