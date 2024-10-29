@@ -25,7 +25,7 @@ function Overview() {
     return (
         <div className='flex flex-col  items-center justify-center'>
 
-        <div className=' max-md:w-[100%] w-full bg-[#001631]    flex-col flex justify-center items-center '>
+        <div className=' max-md:w-[100%] w-full bg-[white]    flex-col flex justify-center items-center '>
             {/* <div className=' w-full '>
                 <div className=" sm:flex w-full sm:h-32 sm:justify-center  ">
                     <div
@@ -61,7 +61,7 @@ function Overview() {
             <div className='w-full   flex justify-center '>
 
                 <div className='w-full px-2 sm:px-5  py-[2%] '>
-                    <iframe  className='min-h-[50vh] border-white border lg:min-h-[80vh] min-w-[100%]' src={sections[activeIndex].link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
+                    <iframe  className='min-h-[50vh] lg:min-h-[80vh] min-w-[100%]' src={sections[activeIndex].link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
 
                 </div>
 
