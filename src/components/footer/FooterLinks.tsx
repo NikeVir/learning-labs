@@ -50,7 +50,7 @@ export default function FooterLinks() {
       },
       {
         name: "Message",
-        href: "#",
+        href: "https://www.linkedin.com/company/the-organization-learning-labs/",
         icon: (props: IconProps) => <Image src="/images/logos/linkedin.svg" alt="Message" height={400} width={400} />,
       },
       {
