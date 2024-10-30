@@ -8,9 +8,9 @@ export default function FooterLinks() {
   const navigation = {
     company: [
       { name: "About us", href: "/About" },
-      { name: "Careers", href: "/Proxies/" },
-      { name: "Our Advisors", href: "/Proxies/ipv6" },
-      { name: "Contact Us", href: "/Proxies/ipv6" },
+      { name: "Careers", href: "/" },
+      { name: "Our Advisors", href: "/About" },
+      { name: "Contact Us", href: "/About" },
     ],
     features: [
       { name: "Maturity assessment tools", href: "/" },
@@ -30,7 +30,7 @@ export default function FooterLinks() {
     resources: [
       { name: "Benefits", href: "/research-synopsis" },
       { name: " OLL community portal", href: "/Communities" },
-      { name: "FAQ", href: "/refund-policy" },
+      { name: "FAQ", href: "/" },
     ],
     social: [
       {
