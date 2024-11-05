@@ -11,18 +11,18 @@ const data = [
 const FeatureDate = [
     {
         img: "/images/features/feature2.png",
-        title: "SEO Thought Leaders to Follow (and See) At C3",
-        content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."
+        title: "Work–life balance indicators and talent management approach: a qualitative investigation of Indian luxury hotels",
+        content: "This study investigates work–life balance (WLB) experiences of front-office employees to inductively classify a set of WLB ..."
     },
     {
         img: "/images/features/feature3.png",
-        title: "SEO Thought Leaders to Follow (and See) At C3",
-        content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."
+        title: "Continuous learning and employee performance: a moderated examination of managers’ coaching behavior in India",
+        content: "This study investigates the relationship among continuous learning, change-efficacy and contextual performance of  employees..."
     },
     {
         img: "/images/features/feature4.png",
-        title: "SEO Thought Leaders to Follow (and See) At C3",
-        content: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."
+        title: "  Leadership Style & Organizational Effectiveness in Indian Banking Industry",
+        content: "An extensive research involving over 100 managers in the leading banks in India was conducted to identify & delve into the leadership styles practiced by the middle management and their correlation with organization..."
     }
 ]
 
@@ -56,8 +56,8 @@ function Features() {
                         <div className='flex flex-col gap-[5px] text-justify'>
 
                             <p className='text-sm text-[#E8971E]'>May 27, 2022</p>
-                            <h2 className='text-2xl font-bold text-white'>Hard Work Always Brings You Success</h2>
-                            <p className='text-lg text-[#BDBDBD]'>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim t...</p>
+                            <h2 className='text-2xl font-bold text-white'>Hard Work can continuous learning amplify employees’ change-efficacy and contextual performance in a Post merger phase Brings You Success</h2>
+                            <p className='text-lg text-[#BDBDBD]'>This study investigates the relationship among continuous learning, change-efficacy and contextual performance of  employees working with a recently merged bank and further explores the mediating role of employees’ change efficacy in relationship between continuous learning and contextual performance of employees....</p>
                         </div>
                     </div>
                     <div className='flex   flex-col gap-6'>
