@@ -14,7 +14,7 @@ const FeatureDate = [
     {
         img: "/images/features/HOHRM02INOLL101_COVER IMAGE.jpg",
         title: "Work–life balance indicators and talent management approach: a qualitative investigation of Indian luxury hotels",
-        content: "This study investigates work–life balance (WLB) experiences of front-office employees to inductively classify a set of WLB ..."
+        content: "This study investigates work–life balance (WLB) experiences of front-office employees to inductively classify a set of WLB indicators for the locally owned Indian luxury hotels. Four clusters of WLB indicators that are grounded in the experiences of front-office employees are identified and presented. Interview data from human resource representatives unveil that hotels consider existing WLB practices as key HRM practices with an inclusive TM approach. The findings also surface the differences in expectations of front-office employees and WLB practices followed by the hotels."
     },
     {
         img: "/images/features/ITHRM02INOLL01_Cover image.jpg",
@@ -76,7 +76,7 @@ function Features() {
                                         <h2 className='md:text-xl md:w-[317px] font-bold'>{item.title}</h2>
                                         <p className='md:text-[16px] font-normal md:w-[276px] tracking-[0.5px] '>
                                             {isExpanded ? item.content : item.content.substring(0, 20) + "..."}
-                                            <span onClick={toggleReadMore} className="text-[#004c92] font-light">{isExpanded ? "Show Less" : "Read More"}</span>
+                                            <span onClick={toggleReadMore} className="text-[#E8971E] font-light">{isExpanded ? "Show Less" : "Read More"}</span>
 
                                         </p>
                                     </div>
