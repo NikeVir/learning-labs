@@ -98,10 +98,10 @@ function Research() {
                     </Slider>
                 </div>
 
-                <div className='flex justify-center'>
+                {/* <div className='flex justify-center'>
                     <Button onClick={()=>window.open("/research-synopsis", "_self")} variant={'white'} className='rounded-[30px] bg-[#00b84d] text-white text-[14px] w-[285px]'> Research 
                     synopsis</Button>
-                </div>
+                </div> */}
             </div>
               
 
