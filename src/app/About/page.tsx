@@ -125,7 +125,7 @@ function page() {
               </div> */}
             </div>
             <div className='border-2 border-[#FEBF00] bg-white flex flex-col gap-6 rounded-3xl py-[40px] px-5 sm:px-[59px]'>
-              <h1 className='text-[#0E0637] font-bold text-[2.6rem] leading-[50px]'>About OLL</h1>
+              <h1 className='text-[#0E0637] font-bold md:text-[2.6rem] leading-[50px] sm:text-[1.5rem]'>About OLL</h1>
               {/* <p className='max-w-[882px] font-medium text-lg text-[#100D22]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor pellentesque et nibh tincidunt bibendum. Sed in tellus in feugiat dui et enim. Odio feugiat id donec ultricies. Nisi, sed sed pellentesque posuere orci sit sed. Gravida facilisis sollicitudin donec vitae quam ut nibh enim. </p> */}
               <div className='relative'>
                 <img src='/images/communities/background.svg' className='absolute sm:left-[30%] -top-[10%]' alt='community' />
