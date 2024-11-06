@@ -13,11 +13,11 @@ const sections = [
     {
         id: 'table-of-contents',
         title: 'Maturity assessment tools',
-        link:"https://www.youtube.com/embed/gXUuPdv9_RA"
+        link:"https://www.youtube.com/embed/gXUuPdv9_RA?autoplay=1&loop=1&playlist=gXUuPdv9_RA"
     },
-    { id: 'screencasts', title: 'Immersive Business simulations',link:"https://www.youtube.com/embed/gXUuPdv9_RA" },
-    { id: 'resources', title: 'On-demand research & consultation',link:"https://www.youtube.com/embed/gXUuPdv9_RA" },
-    { id: 'pricing', title: 'Custom learning program development',link:"https://www.youtube.com/embed/gXUuPdv9_RA" },
+    { id: 'screencasts', title: 'Immersive Business simulations',link:"https://www.youtube.com/embed/gXUuPdv9_RA?autoplay=1&loop=1&playlist=gXUuPdv9_RA" },
+    { id: 'resources', title: 'On-demand research & consultation',link:"https://www.youtube.com/embed/gXUuPdv9_RA?autoplay=1&loop=1&playlist=gXUuPdv9_RA" },
+    { id: 'pricing', title: 'Custom learning program development',link:"https://www.youtube.com/embed/gXUuPdv9_RA?autoplay=1&loop=1&playlist=gXUuPdv9_RA" },
 
 ]
 function Overview() {
@@ -58,10 +58,10 @@ function Overview() {
                     </div>
                 </div>
             </div> */}
-            <div className='w-full   flex justify-center '>
+            <div className='w-full   flex justify-center min-w-[100%] '>
 
                 <div className='w-full px-2 sm:px-5  py-[2%] '>
-                    <iframe  className='min-h-[50vh] lg:min-h-[80vh] min-w-[100%]' src={sections[activeIndex].link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
+                    <iframe className='min-h-[50vh] lg:min-h-[80vh] min-w-[100%] w-full ' src={sections[activeIndex].link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
 
                 </div>
 

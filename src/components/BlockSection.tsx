@@ -9,6 +9,11 @@ export default function Blog({ filter }: { filter: string | null }) {
   const [searchInput, setSearchInput] = useState(filter == null ? "" : filter);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleReadMore = () => {
+    setIsExpanded(true);
+  }
 
   const cards = [
     {
@@ -93,7 +98,12 @@ export default function Blog({ filter }: { filter: string | null }) {
           <p style={{ color: `${card.color}` }}>{card.title}</p>
         </div>
           <h1 className="text-center sm:text-left  font-bold text-xl">{card.heading}</h1>
-          <p className=" sm:text-left text-base text-[#000000] text-justify">{card.text.substring(0, 191) + "..."} <span className="text-[#004c92] font-bold">Read More</span></p>
+          <p className=" sm:text-left text-base text-[#000000] text-justify">
+            {isExpanded ? card.text : card.text.substring(0, 191) + "..."}
+            
+             <span onClick={toggleReadMore} className="text-[#004c92] font-bold">{isExpanded ? "Show Less" : "Read More"}</span>
+            
+            </p>
         </div>
       </div>
     </div>

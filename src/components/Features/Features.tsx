@@ -1,5 +1,7 @@
-import React from 'react'
-import { Button } from '../ui/Button'
+"use client";
+
+import React, { useState } from 'react';
+// import { Button } from '../ui/Button'
 
 const data = [
     "Healthcare",
@@ -27,7 +29,11 @@ const FeatureDate = [
 ]
 
 function Features() {
+    const [isExpanded, setIsExpanded] = useState(false);
 
+    const toggleReadMore = () => {
+        setIsExpanded(prevState => !prevState);
+    }
     return (
         <div className='relative bg-[#001631] py-10 md:pb-20 flex justify-center'>
             <div>
@@ -68,7 +74,11 @@ function Features() {
                                     <img src={item.img} className='w-[150px] max-md:h-[90px] xl:w-[250px]' alt="" />
                                     <div className='text-white xl:w-[280px] flex flex-col gap-2'>
                                         <h2 className='md:text-xl md:w-[317px] font-bold'>{item.title}</h2>
-                                        <p className='md:text-[16px] font-normal md:w-[276px] tracking-[0.5px] '>{item.content}</p>
+                                        <p className='md:text-[16px] font-normal md:w-[276px] tracking-[0.5px] '>
+                                            {isExpanded ? item.content : item.content.substring(0, 20) + "..."}
+                                            <span onClick={toggleReadMore} className="text-[#004c92] font-light">{isExpanded ? "Show Less" : "Read More"}</span>
+
+                                        </p>
                                     </div>
                                 </div>
                             ))
