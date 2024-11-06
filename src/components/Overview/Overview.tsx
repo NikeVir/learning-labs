@@ -13,11 +13,11 @@ const sections = [
     {
         id: 'table-of-contents',
         title: 'Maturity assessment tools',
-        link:"https://www.youtube.com/embed/lJIrF4YjHfQ?si=M7HF6ymgxgallexH"
+        link:"https://www.youtube.com/embed/gXUuPdv9_RA"
     },
-    { id: 'screencasts', title: 'Immersive Business simulations',link:"https://www.youtube.com/embed/kwaVP3JTtR8?si=tMg2NCNWFuqVz0fU" },
-    { id: 'resources', title: 'On-demand research & consultation',link:"https://www.youtube.com/embed/w5wwwEUf_iA?si=jTg_pRJo-B6_rSNd" },
-    { id: 'pricing', title: 'Custom learning program development',link:"https://www.youtube.com/embed/7ic6lrYyQuI?si=Tbf9A7nsUoayyg9G" },
+    { id: 'screencasts', title: 'Immersive Business simulations',link:"https://www.youtube.com/embed/gXUuPdv9_RA" },
+    { id: 'resources', title: 'On-demand research & consultation',link:"https://www.youtube.com/embed/gXUuPdv9_RA" },
+    { id: 'pricing', title: 'Custom learning program development',link:"https://www.youtube.com/embed/gXUuPdv9_RA" },
 
 ]
 function Overview() {

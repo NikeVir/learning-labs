@@ -6,7 +6,7 @@ const blogs = [
     "blog-img": "/images/blog.png",
     title: "Pharmaceutical",
     color: "#34C759",
-    heading: "SEO Thought Leaders to Follow (and See) At C3",
+    heading: "Work–life balance indicators and talent management approach: a qualitative investigation of Indian luxury hotels",
     text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint....",
     writtenBy: "CateProxies",
     Date: "2024-06-14",
