@@ -13,24 +13,24 @@ export default function FooterLinks() {
       { name: "Contact Us", href: "/About" },
     ],
     features: [
-      { name: "Maturity assessment tools", href: "/" },
-      { name: "Immersive Business simulations", href: "/" },
-      { name: " On-demand research & consultation", href: "/" },
-      { name: " Custom learning program development", href: "/" },
+      { name: "Maturity assessment tools", href: "#" },
+      { name: "Immersive Business simulations", href: "#" },
+      { name: " On-demand research & consultation", href: "#" },
+      { name: " Custom learning program development", href: "#" },
 
     ],
     developers: [
-      { name: "Banking & Insurance", href: "/industries/Bank&Finance" },
-      { name: "Hospitality", href: "/industries/HealthCare" },
-      { name: "Healthcare", href: "/industries/Hospitality" },
-      { name: "Pharmaceutical", href: "/industries/Pharmaceutical" },
-      { name: "Retail", href: "/industries/Retail" },
-      { name: "Information Technology", href: "/industries/Retail" },
+      { name: "Banking & Insurance", href: "#" },
+      { name: "Hospitality", href: "#" },
+      { name: "Healthcare", href: "#" },
+      { name: "Pharmaceutical", href: "#" },
+      { name: "Retail", href: "#" },
+      { name: "Information Technology", href: "#" },
     ],
     resources: [
-      { name: "Benefits", href: "/research-synopsis" },
+      { name: "Benefits", href: "/Communities" },
       { name: " OLL community portal", href: "/Communities" },
-      { name: "FAQ", href: "/" },
+      { name: "FAQ", href: "/Communities" },
     ],
     social: [
       {
@@ -70,8 +70,7 @@ export default function FooterLinks() {
           <div className="  flex flex-col items-center justify-center  text-center lg:text-left">
             <div className="flex items-center -gap-10">
               {/* <img src="/images/footer/footerlogo.svg" className="w-[70px] h-[70px]" alt="Logo" /> */}
-              <img src="/images/whitelogo.svg" className=" relative " alt="Logo" />
-
+              <a href ="/"><img src="/images/whitelogo.svg" className=" relative " alt="Logo" /> </a>
             </div>
 
             <div className="flex justify-center items-center mt-2  space-x-1 lg:justify-start">
