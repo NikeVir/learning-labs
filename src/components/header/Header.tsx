@@ -250,17 +250,17 @@ const Header: React.FC = () => {
                                 <a href="/Communities" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
                                     OLL Communities
                                 </a>
-                                <a href="/research-synopsis" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
+                                {/* <a href="/research-synopsis" className="flex w-full items-center justify-between rounded-lg  text-base font-semibold leading-7 py-2 text-gray-900 hover:bg-gray-50">
                                     Research Synopsis
 
-                                </a>
+                                </a> */}
 
 
                             </div>
                             <div className="py-6">
                                 <div className="flex flex-col items-center gap-8">
                                     <a
-                                        href="/research-synopsis"
+                                        href="/Communities"
                                         className="w-full px-10 py-4 text-xl font-bold text-center text-white rounded-md shadow-sm bg-[#4AB371] hover:bg-primary/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                                     >
                                         Join Community

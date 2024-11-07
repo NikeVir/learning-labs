@@ -9,6 +9,11 @@ export default function Blog({ filter }: { filter: string | null }) {
   const [searchInput, setSearchInput] = useState(filter == null ? "" : filter);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleReadMore = () => {
+    setIsExpanded(true);
+  }
 
   const cards = [
     {
@@ -93,7 +98,12 @@ export default function Blog({ filter }: { filter: string | null }) {
           <p style={{ color: `${card.color}` }}>{card.title}</p>
         </div>
           <h1 className="text-center sm:text-left  font-bold text-xl">{card.heading}</h1>
-          <p className=" sm:text-left text-base text-[#000000] text-justify">{card.text.substring(0, 191) + "..."} <span className="text-[#004c92] font-bold">Read More</span></p>
+          <p className=" sm:text-left text-base text-[#000000] text-justify">
+            {isExpanded ? card.text : card.text.substring(0, 191) + "..."}
+            
+             <span onClick={toggleReadMore} className="text-[#004c92] font-bold">{isExpanded ? "Show Less" : "Read More"}</span>
+            
+            </p>
         </div>
       </div>
     </div>
@@ -179,7 +189,7 @@ export default function Blog({ filter }: { filter: string | null }) {
             </div>
           </div>
           {/* Display Recent Blogs */}
-          <div className="flex flex-col px-[22px]  gap-6 max-md:hidden">
+          {/* <div className="flex flex-col px-[22px]  gap-6 max-md:hidden">
             <div className="mt-2 flex  font-bold text-base">Recent</div>
             <div className=" flex gap-4 md:w-[250px] lg:w-[330px]">
               <img src="/images/blog/recent.png" alt="blog" className=" rounded-lg" />
@@ -202,11 +212,11 @@ export default function Blog({ filter }: { filter: string | null }) {
                 <p className="text-[#878690] text-[12px] mt-2">8/12/2021</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* Display Cards */}
         <div className="w-full">
-          <div className="text-[#001d59] font-bold text-2xl max-md:text-center md:text-4xl px-5 mt-5">
+          <div className="text-[#001d59] text-2xl font-bold  max-md:text-center md:text-[42px] sm:text-[32px] px-5 mt-5">
             Research Synopsis List
           </div>
 
