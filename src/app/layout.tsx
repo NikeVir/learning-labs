@@ -16,7 +16,10 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "The Organization Learning Lab",
   description: "The Next Gen Learning Lab",
-  favicon: "/logo.ico",
+  icons: {
+    icon: "/logo.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -26,10 +29,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet"></link>
-      <body
-        className={`font-satoshi`}
-      >
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/logo.ico" type="image/x-icon" />
+        <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+      </head>
+      <body className="font-satoshi">
         {children}
       </body>
     </html>
