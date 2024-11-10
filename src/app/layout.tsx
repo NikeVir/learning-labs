@@ -16,6 +16,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "The Organization Learning Lab",
   description: "The Next Gen Learning Lab",
+  favicon: "/logo.ico",
 };
 
 export default function RootLayout({
