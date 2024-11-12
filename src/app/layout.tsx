@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "The Organization Learning Lab",
-  description: "The Next Gen Learning Lab",
+  title: "The Organization Learning Labs",
+  description: "In Depth Organization research insights transformed into organization development learning tools and simulations",
   icons: {
     icon: "/logo.ico",
     apple: "/apple-touch-icon.png",
