@@ -65,12 +65,34 @@ function Research() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: true,
+                    appendDots: (dots: React.ReactNode) => (
+                        <div
+                          style={{
+                            borderRadius: "10px",
+                            padding: "10px",
+                            bottom: "-50px",
+                          }}
+                        >
+                          <ul style={{ margin: "0px" }}> {dots} </ul>
+                        </div>
+                      ),
+                      customPaging: (i: number) => (
+                        <div
+                          style={{
+                            width: "30px",
+                            color: "blue",
+                            // border: "1px blue solid"
+                          }}
+                        >
+                          <div style={{width:"10px",height:"10px", background:"black", borderRadius:"100%"}}></div>
+                        </div>
+                      )
                 }
             }
         ]
     };
     return (
-        <div className='flex relative justify-center  items-center lg:min-h-screen py-10 md:py-20  lg:py-10 '>
+        <div className='flex relative justify-center  items-center lg:min-h-screen  py-10 md:py-20  lg:py-10 '>
             <div>
                 {/* <img src="/images/research/flash.svg" className='absolute top-0 left-0' alt="Research" /> */}
             </div>
@@ -88,7 +110,7 @@ function Research() {
                         receive a copy of the completed research paper on completion.
                     </p>
                 </div>
-                <div className='slider-container overflow-hidden lg:min-h-[70vh] w-full  '>
+                <div className='slider-container overflow-hidden max-sm:pb-10 lg:min-h-[70vh] w-full  '>
                 <Slider {...settings}>
                         {cardData.map((data, index) => (
                             <div className="flex flex-col  justify-center items-center lg:px-2 ">

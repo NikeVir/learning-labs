@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
+import { Button } from '../ui/Button';
+import Image from 'next/image';
 
 
 const FeatureDate = [
@@ -169,7 +171,7 @@ function Features() {
         });
     };
 
-    const singleToggleReadMore = ()=>{
+    const singleToggleReadMore = () => {
         setIsExpanded1(prevState => !prevState);
     }
     let singleText = 'This study investigates the relationship among continuous learning, change-efficacy and contextual performance of employees working with a recently merged bank and further explores the mediating role of employees’ change efficacy in relationship between continuous learning and contextual performance of employees....'
@@ -181,11 +183,11 @@ function Features() {
             </div>
             <div className='relative w-[95%] flex flex-col gap-8'>
                 <div>
-                    <h1 className='text-white sm:text-[42px] text-[38px] text-center mt-5 font-bold'>Industries in focus</h1>
+                    <h1 className='text-white md:text-3xl sm:text-[35px] text-[38px] text-center mt-5 font-bold'>Industries in focus</h1>
                 </div>
                 <div className='flex justify-center'>
                     <div className='bg-[rgba(255,255,255,0.12)] max-lg:overflow-x-scroll w-[948px] rounded-[888px] flex md:justify-center px-4 py-2 gap-[42px]'>
-                    {data.map((item, index) => (
+                        {data.map((item, index) => (
                             <div key={index} onClick={() => setFeatureData(
                                 Data[item as keyof typeof Data]
                             )} className={`text-black text-center shadow-featurebox font-medium min-w-[150px] px-[32px] py-[10px] cursor-pointer  text-sm rounded-[30px] ${item == featureData.type ? "bg-[#FEBF00]" : "bg-white"}`}>{item}</div>
@@ -196,11 +198,11 @@ function Features() {
 
                 <div className='flex gap-12 flex-wrap items-start justify-center'>
                     <div className='flex flex-col gap-[18px] md:w-[548px]'>
-                        <img src="/images/features/BFHRM03INOLL101_cover image.jpg" className='w-full h-full object-cover' alt="" />
+                        <Image src="/images/features/BFHRM03INOLL101_cover image.jpg" className='w-full h-full object-cover rounded' width={500} height={500} alt="" />
                         <div className='flex flex-col gap-[5px] text-justify'>
                             <p className='text-sm text-[#E8971E]'>{featureData.date}</p>
                             <h2 className='text-2xl font-bold text-white'>{featureData.title}</h2>
-                            <p className='text-lg text-[#BDBDBD]'>{isExpanded1 ? featureData.content: featureData.content.substring(0, 20) + "... "}
+                            <p className='text-lg text-[#BDBDBD]'>{isExpanded1 ? featureData.content : featureData.content.substring(0, 20) + "... "}
                                 <span onClick={singleToggleReadMore} className="text-[#E8971E] font-light cursor-pointer">
                                     {isExpanded1 ? "Show Less" : "Read More"}
                                 </span>
@@ -210,7 +212,7 @@ function Features() {
                     <div className='flex flex-col gap-6'>
                         {featureData.more.map((item, index) => (
                             <div key={index} className='flex gap-4 max-w-[700px] text-justify'>
-                                <img src={item.img} className='w-[150px] h-full max-md:h-[90px] xl:w-[250px] object-cover rounded' alt="" />
+                                <Image src={item.img} className='w-[150px] h-full max-md:h-[90px] xl:w-[250px] object-cover rounded' width={500} height={500} alt="" />
                                 <div className='text-white flex flex-col gap-2'>
                                     <h2 className='md:text-xl font-bold'>{item.title}</h2>
                                     <p className='md:text-[16px] font-normal tracking-[0.5px]'>
@@ -222,6 +224,9 @@ function Features() {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                    <div className='flex items-center justify-center'>
+                        <Button onClick={()=>window.open("/research-synopsis", "_self")} variant='primary' >Read More</Button>
                     </div>
                 </div>
             </div>

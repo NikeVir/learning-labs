@@ -60,7 +60,7 @@ export default function CommunityFaq({ colortheme }: { colortheme: string }) {
 
                     <div className=" flex flex-col ">
                         {faqs.map((faq, index) => (
-                            <div key={index} onClick={() => handleToggle(index)} className="cursor-pointer  flex w-auto lg:w-[670px] flex-col ">
+                            <div key={index} onClick={() => handleToggle(index)} className="cursor-pointer  flex w-auto min-w-[320px] lg:w-[670px] flex-col ">
                                 {/* FAQ BLOCK */}
                                 <div className={`relative flex my-2
                                 bg-[#F2F2F2]
