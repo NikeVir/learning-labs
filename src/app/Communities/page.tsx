@@ -32,6 +32,9 @@ function Page() {
           </div>
         </div>
       </section>
+      <div className=' mt-10 text-black md:text-3xl sm:text-[35px] text-[38px] text-center  font-bold'>
+      Community benefits
+      </div>
 
       <section className="flex justify-center items-center my-10">
         <div className="w-[90%] xl:w-[80%] flex max-md:flex-wrap justify-center max-md:gap-10">

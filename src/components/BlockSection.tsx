@@ -9,11 +9,15 @@ export default function Blog({ filter }: { filter: string | null }) {
   const [searchInput, setSearchInput] = useState(filter == null ? "" : filter);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [expandedCardIndex, setExpandedCardIndex] = useState(null);
 
-  const toggleReadMore = () => {
-    setIsExpanded(true);
-  }
+  const toggleReadMore = (index:any) => {
+    setExpandedCardIndex(expandedCardIndex === index ? null : index);
+  };
+
+  const handleCardClick = (link:string) => {
+    window.location.href = link;
+  };
 
   const cards = [
     {
@@ -84,7 +88,7 @@ export default function Blog({ filter }: { filter: string | null }) {
   const currentCards = filteredCards.slice(indexOfFirstItem, indexOfLastItem);
 
   const displayCards = currentCards.map((card, index) => (
-    <div key={index} onClick={() => window.open(`/research-synopsis/${card.heading.replace(/\s+/g, '-')}`)} className=" bg-gray-100 border-[3px] border-gray-300 flex max-md:flex-col shadow-sm rounded-[40px] min-w-full  hover:bg-[#f9f7f7]  cursor-pointer">
+    <div key={index} /*onClick={() => window.open(`/research-synopsis/${card.heading.replace(/\s+/g, '-')}`)}*/ className=" bg-gray-100 border-[3px] border-gray-300 flex max-md:flex-col shadow-sm rounded-[40px] min-w-full  hover:bg-[#f9f7f7]  cursor-pointer">
       <div className="p-4 basis-1/3">
         <div className="rounded-lg  overflow-hidden ">
           <Image src={card["blog-img"]} alt="Blog Image" className="bg-contain" width={396} height={176} />
@@ -98,12 +102,18 @@ export default function Blog({ filter }: { filter: string | null }) {
           <p style={{ color: `${card.color}` }}>{card.title}</p>
         </div>
           <h1 className="text-center sm:text-left  font-bold text-xl">{card.heading}</h1>
-          <p className=" sm:text-left text-base text-[#000000] text-justify">
-            {isExpanded ? card.text : card.text.substring(0, 191) + "..."}
-            
-             <span onClick={toggleReadMore} className="text-[#004c92] font-bold">{isExpanded ? "Show Less" : "Read More"}</span>
-            
-            </p>
+          <p className="sm:text-left text-base text-[#000000] text-justify">
+                {expandedCardIndex === index ? card.text : card.text.substring(0, 191) + "..."}
+                <span
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleReadMore(index);
+                  }}
+                  className="text-[#004c92] font-bold cursor-pointer"
+                >
+                  {expandedCardIndex === index ? "Show Less" : "Read More"}
+                </span>
+              </p>
         </div>
       </div>
     </div>
@@ -174,6 +184,19 @@ export default function Blog({ filter }: { filter: string | null }) {
               </select>
             </div>
             <div className=" bg-[#E0E0E0] h-[1px]"></div>
+            <div>
+              <h4 className="font-bold text-base">Learning Tool Type</h4>
+              <select
+                className="w-[250px] lg:w-[330px] py-[10px] px-[32px] rounded-lg shadow-sm"
+                value={selectedHierarchy || "All"}
+                onChange={(e) => setSelectedHierarchy(e.target.value)}
+              >
+                {["All", "Senior", "Junior", "Team Lead"].map((hierarchy) => (
+                  <option key={hierarchy} value={hierarchy}>{hierarchy}</option>
+                ))}
+              </select>
+            </div>
+            <div className=" bg-[#E0E0E0] h-[1px]"></div>
 
             <div>
               <h4 className="font-bold text-base">Country</h4>
@@ -216,7 +239,7 @@ export default function Blog({ filter }: { filter: string | null }) {
         </div>
         {/* Display Cards */}
         <div className="w-full">
-          <div className="text-[#001d59] text-2xl font-bold  max-md:text-center md:text-[42px] sm:text-[32px] px-5 mt-5">
+          <div className="text-[#001d59] text-2xl font-bold  max-md:text-center md:text-3xl sm:text-[35px] text-[38px] px-5 mt-5">
             Research Synopsis List
           </div>
 
