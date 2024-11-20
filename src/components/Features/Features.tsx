@@ -225,10 +225,10 @@ function Features() {
                             </div>
                         ))}
                     </div>
-                    <div className='flex items-center justify-center'>
-                        <Button onClick={()=>window.open("/research-synopsis", "_self")} variant='primary' >Read More</Button>
-                    </div>
                 </div>
+                    <div className='flex items-center justify-center'>
+                        <Button onClick={() => window.open("/research-synopsis", "_self")} variant='primary' >Read More</Button>
+                    </div>
             </div>
         </div>
     );
