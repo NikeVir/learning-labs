@@ -198,7 +198,7 @@ function Features() {
 
                 <div className='flex gap-12 flex-wrap items-start justify-center'>
                     <div className='flex flex-col gap-[18px] md:w-[548px]'>
-                        <Image src="/images/features/BFHRM03INOLL101_cover image.jpg" className='w-full h-full object-cover rounded' width={500} height={500} alt="" />
+                        <Image src="/images/features/BFHRM03INOLL101_cover image.jpg" className='w-full h-full object-cover rounded-3xl' width={500} height={500} alt="" />
                         <div className='flex flex-col gap-[5px] text-justify'>
                             <p className='text-sm text-[#E8971E]'>{featureData.date}</p>
                             <h2 className='text-2xl font-bold text-white'>{featureData.title}</h2>
@@ -212,7 +212,7 @@ function Features() {
                     <div className='flex flex-col gap-6'>
                         {featureData.more.map((item, index) => (
                             <div key={index} className='flex gap-4 max-w-[700px] text-justify'>
-                                <Image src={item.img} className='w-[150px] h-full max-md:h-[90px] xl:w-[250px] object-cover rounded' width={500} height={500} alt="" />
+                                <Image src={item.img} className='w-[150px] h-full max-md:h-[90px] xl:w-[250px] object-cover rounded-3xl' width={500} height={500} alt="" />
                                 <div className='text-white flex flex-col gap-2'>
                                     <h2 className='md:text-xl font-bold'>{item.title}</h2>
                                     <p className='md:text-[16px] font-normal tracking-[0.5px]'>
