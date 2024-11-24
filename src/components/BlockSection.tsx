@@ -150,7 +150,7 @@ export default function Blog({ filter }: { filter: string | null }) {
                 value={selectedIndustry || "All"}
                 onChange={(e) => setSelectedIndustry(e.target.value)}
               >
-                {["All", "Pharmaceutical", "Healthcare", "Hospitality"].map((industry) => (
+                {["All", "BFSI", "Healthcare", "Pharmaceuticals", "Hospitality", "Retail", "Information Technology", "Oil & Gas"].map((industry) => (
                   <option key={industry} value={industry}>{industry}</option>
                 ))}
               </select>
@@ -164,7 +164,7 @@ export default function Blog({ filter }: { filter: string | null }) {
                 value={selectedResponsibility || "All"}
                 onChange={(e) => setSelectedResponsibility(e.target.value)}
               >
-                {["All", "Sales", "Marketing", "Communications"].map((responsibility) => (
+                {["All", "LNS_Leadership & strategy", "SPD_Strategic Planning & Development", "RND_Research & Development", "FIN_Corporate Finance", "HRM_Human Resource Management", "PRO_Production & Manufacturing", "SCM_Supply Chain & logistics management", "IDS_IT infrastructure & Data security", "CRM_Customer Relationship Management", "QMM_Quality Control & Management", "PUR_Purchase, Inventory & Warehouse management", "FMM_Facility Maintenance & Management", "MKT_Brand & Digital marketing", "RPM_Retail & Franchise management", "INS_Institutional & Corporate sales", "PMO_Product & Project management"].map((responsibility) => (
                   <option key={responsibility} value={responsibility}>{responsibility}</option>
                 ))}
               </select>
@@ -178,7 +178,7 @@ export default function Blog({ filter }: { filter: string | null }) {
                 value={selectedHierarchy || "All"}
                 onChange={(e) => setSelectedHierarchy(e.target.value)}
               >
-                {["All", "Senior", "Junior", "Team Lead"].map((hierarchy) => (
+                {["All","G1_Case worker", "G2_Supervisors", "G3_Managers", "G4_Leadership", "G5_C suite", "G6_Generic"].map((hierarchy) => (
                   <option key={hierarchy} value={hierarchy}>{hierarchy}</option>
                 ))}
               </select>
