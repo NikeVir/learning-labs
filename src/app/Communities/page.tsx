@@ -108,7 +108,7 @@ function Page() {
 
       <Footer />
       <div className=""></div>
-      <FloatingFooter />
+      <FloatingFooter />4
     </div>
   );
 }
