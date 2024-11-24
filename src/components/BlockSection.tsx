@@ -22,7 +22,7 @@ export default function Blog({ filter }: { filter: string | null }) {
   const cards = [
     {
       'type': 'blog',
-      "blog-img": "/images/blog.png",
+      "blog-img": "/images/features/ITHRM02INOLL01_Cover image.jpg",
       title: "Pharmaceutical",
       color: "#34C759",
       heading: "Work–life balance indicators and talent management approach: a qualitative investigation of Indian luxury hotels",
@@ -35,10 +35,10 @@ export default function Blog({ filter }: { filter: string | null }) {
     },
     {
       'type': 'blog',
-      "blog-img": "/images/blog.png",
+      "blog-img": "/images/features/BF001_cover image.jpg",
       title: "Healthcare",
       color: "#FFCC00",
-      heading: "SEO Thought Leaders to Follow (and See) At C3",
+      heading: "Work–life balance indicators and talent management approach: a qualitative investigation of Indian luxury hotels",
       text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint....",
       writtenBy: "CateProxies",
       industry: "pharmaceutical",
@@ -61,11 +61,11 @@ export default function Blog({ filter }: { filter: string | null }) {
     },
     {
       'type': 'guide',
-      "blog-img": "/images/blog.png",
+      "blog-img": "/images/features/HOHRM02INOLL101_COVER IMAGE.jpg",
       title: "Hospitality",
       color: "#5856D6",
       heading: "SEO Thought Leaders to Follow (and See) At C3",
-      text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint...",
+      text: "This study investigates work–life balance (WLB) experiences of front-office employees to inductively classify a set of WLB ...",
       writtenBy: "CateProxies",
       industry: "healthcare",
       responsibility: "sales & marketing",
@@ -90,7 +90,7 @@ export default function Blog({ filter }: { filter: string | null }) {
   const displayCards = currentCards.map((card, index) => (
     <div key={index} /*onClick={() => window.open(`/research-synopsis/${card.heading.replace(/\s+/g, '-')}`)}*/ className=" bg-gray-100 border-[3px] border-gray-300 flex max-md:flex-col shadow-sm rounded-[40px] min-w-full  hover:bg-[#f9f7f7]  cursor-pointer">
       <div className="p-4 basis-1/3">
-        <div className="rounded-lg  overflow-hidden ">
+        <div className="rounded-3xl  overflow-hidden ">
           <Image src={card["blog-img"]} alt="Blog Image" className="bg-contain" width={396} height={176} />
         </div>
         
@@ -101,7 +101,7 @@ export default function Blog({ filter }: { filter: string | null }) {
         <div className="rounded-md  text-xl font-medium">
           <p style={{ color: `${card.color}` }}>{card.title}</p>
         </div>
-          <h1 className="text-center sm:text-left  font-bold text-xl">{card.heading}</h1>
+          <h1 className=" sm:text-left  font-bold text-xl">{card.heading}</h1>
           <p className="sm:text-left text-base text-[#000000] text-justify">
                 {expandedCardIndex === index ? card.text : card.text.substring(0, 191) + "..."}
                 <span
@@ -238,8 +238,8 @@ export default function Blog({ filter }: { filter: string | null }) {
           </div> */}
         </div>
         {/* Display Cards */}
-        <div className="w-full">
-          <div className="text-[#001d59] text-2xl font-bold  max-md:text-center md:text-3xl sm:text-[35px] text-[38px] px-5 mt-5">
+        <div id="research" className="w-full">
+          <div className="text-[#001d59]  font-bold  max-md:text-center text-3xl md:text-3xl lg:text-[42px] px-5 mt-5">
             Research Synopsis List
           </div>
 
